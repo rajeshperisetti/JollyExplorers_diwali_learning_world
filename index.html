@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#100b2c">
+<title>JollyExplorers | Diwali Electronics Learning World</title>
+<style>
+:root{--bg:#100b2c;--panel:#211642;--panel2:#2b1b50;--line:#624b87;--gold:#ffd36d;--pink:#ff79b8;--cyan:#7ce8ff;--mint:#8df0c0;--ink:#fff8ee;--muted:#c9bee0;--red:#ff8b8b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#553071 0,#1c123d 40%,#0d0922 100%);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:10px 14px;font-weight:750;background:linear-gradient(135deg,#ffe08a,#ffad67);color:#28163e}button:hover{filter:brightness(1.07);transform:translateY(-1px)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}button.alt{background:#3b2b68;color:white;border:1px solid #755d9e}button.line{background:transparent;color:#eadfff;border:1px solid #705991}button.small{padding:7px 10px;font-size:12px}a{color:var(--cyan)}header{max-width:1280px;margin:auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{display:flex;align-items:center;gap:11px}.brandmark{width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,#ffd36d,#ff79b8);display:grid;place-items:center;font-size:25px}.brand b{display:block;font-size:18px}.brand small{color:var(--muted)}.head-actions{display:flex;gap:8px;flex-wrap:wrap}main{max-width:1280px;margin:auto;padding:10px 20px 60px}.hero{border:1px solid #76599c;border-radius:26px;padding:34px 22px;text-align:center;background:radial-gradient(circle at 50% 110%,#ffbb5a40,transparent 48%),linear-gradient(120deg,#2a174fdd,#512467bb);position:relative;overflow:hidden}.eyebrow{font-size:12px;letter-spacing:2px;color:var(--gold);font-weight:850;text-transform:uppercase}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.08;margin:10px 0;background:linear-gradient(90deg,#fff2b5,#ffb4d8,#9defff);background-clip:text;color:transparent}.hero p{max-width:790px;margin:0 auto 18px;color:#eee2ff}.chips{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:17px}.chip{border:1px solid #755a9a;border-radius:99px;padding:6px 11px;font-size:12px;background:#170e36a8}.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:18px;margin-top:20px}.sidebar{align-self:start;position:sticky;top:12px;border:1px solid var(--line);border-radius:20px;background:#1b1237;padding:12px}.side-title{color:var(--gold);font-weight:850;font-size:12px;letter-spacing:1.3px;text-transform:uppercase;padding:8px}.navbtn{width:100%;text-align:left;display:flex;gap:10px;align-items:center;background:transparent;color:#e9ddfa;border:1px solid transparent;padding:10px;border-radius:11px;font-weight:650}.navbtn:hover,.navbtn.active{background:#38265e;border-color:#755b9b;transform:none}.navbtn .ni{width:25px;text-align:center;font-size:18px}.progressbox{border-top:1px solid #493765;margin-top:12px;padding:12px 8px 5px;color:var(--muted);font-size:12px}.progressbar{height:8px;background:#100b26;border-radius:99px;overflow:hidden;margin-top:7px}.progressbar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#8be9ff,#ffce70);transition:width .3s}.content{min-width:0}.view{display:none}.view.active{display:block}.viewhead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin:0 0 14px}.viewhead h2{font-size:27px;margin:0}.viewhead p{margin:4px 0;color:var(--muted);font-size:14px}.tag{font-size:11px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;font-weight:850}.card{background:linear-gradient(145deg,#261949,#181031);border:1px solid var(--line);border-radius:18px;padding:17px;margin-bottom:14px}.card h3{margin:0 0 8px;font-size:18px}.card p{color:#e0d5f2;margin:6px 0}.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}.lessonsteps{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin:14px 0}.step{padding:9px 8px;border-radius:11px;background:#170f31;border:1px solid #4c396d;text-align:center;font-size:11px;color:var(--muted)}.step b{display:block;color:var(--gold);font-size:16px}.simarea{background:#100b28;border:1px solid #514071;border-radius:15px;padding:14px;min-height:190px}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}.control{flex:1;min-width:150px;background:#170f32;border:1px solid #4b386c;border-radius:12px;padding:10px}.control label{font-size:12px;color:#e9dfff;display:block;margin-bottom:5px}.control input[type=range]{width:100%;accent-color:#ffd36d}.control input[type=color]{width:100%;height:32px;background:none;border:0}.control input[type=number],.control select,.control input[type=text],.control textarea{width:100%;background:#100b28;color:white;border:1px solid #624c83;border-radius:9px;padding:8px}.bulbrow{display:flex;justify-content:center;align-items:end;gap:22px;flex-wrap:wrap;padding:20px}.bulb{text-align:center;width:70px}.bulbshape{width:52px;height:31px;margin:12px auto 5px;position:relative;border:2px solid #d99448;border-radius:8px 8px 28px 28px/8px 8px 22px 22px;background:linear-gradient(#704027,#b85d25);box-shadow:inset 0 4px 0 #e8a45b}.bulbshape:before{content:"";position:absolute;width:13px;height:22px;left:17px;top:-24px;border-radius:55% 55% 45% 45%;background:#51404c;opacity:.45}.bulbshape.on:before{opacity:1;background:radial-gradient(#fff 5%,#ffe66d 38%,#ff8a00);box-shadow:0 0 18px 8px #ffb03b99}.bulbshape.on{box-shadow:0 0 14px 4px #ffd45b66,inset 0 4px 0 #ffc36c;border-color:#ffe4a0}.wire{height:3px;background:#d0a65c;width:30px;margin:0 -18px 20px}.explain{border-left:4px solid var(--cyan);padding:10px 13px;background:#17203c;border-radius:0 10px 10px 0;margin:12px 0;color:#e6efff}.warning{border-left:4px solid var(--red);padding:10px 13px;background:#351c39;border-radius:0 10px 10px 0;margin:12px 0;color:#ffe5e8}.success{color:var(--mint);font-weight:750}.muted{color:var(--muted);font-size:13px}.quiz{border:1px dashed #8264a7;border-radius:14px;padding:13px;margin-top:12px}.quiz button{margin:5px 5px 0 0}.feedback{min-height:24px;color:var(--mint);font-weight:700;font-size:13px;margin-top:7px}.rangoli{display:grid;grid-template-columns:repeat(9,1fr);gap:5px;max-width:420px;margin:12px auto;padding:12px;background:#0c0820;border-radius:16px}.dot{aspect-ratio:1;border-radius:50%;background:#35264f;border:1px solid #614b81;cursor:pointer}.dot.lit{box-shadow:0 0 12px currentColor;border:2px solid white}.canvasbox{height:270px;border-radius:13px;overflow:hidden;background:linear-gradient(#100c2c,#32184e);border:1px solid #59437a}.canvasbox canvas{width:100%;height:100%;display:block}.housebox{background:linear-gradient(#17133d,#3a2050);border-radius:15px;display:grid;place-items:center;min-height:230px}.housebox svg{width:min(95%,420px)}.greeting{min-height:280px;border:2px solid #e9c36c;border-radius:17px;padding:22px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 75%,#ffcf6955,transparent 50%),linear-gradient(140deg,#51216a,#17113b)}.greeting h2{font-family:Georgia,serif;color:#ffe39d;font-size:32px}.greeting p{max-width:400px;color:#fff1e8;white-space:pre-wrap}.greeting .big{font-size:48px}.table{width:100%;border-collapse:collapse;font-size:13px}.table th,.table td{text-align:left;padding:9px;border-bottom:1px solid #4c396a;vertical-align:top}.table th{color:var(--gold)}.modulegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.modulecard{background:#241743;border:1px solid #604a84;border-radius:15px;padding:14px}.modulecard .emoji{font-size:26px}.modulecard h3{font-size:16px;margin:5px 0}.modulecard p{font-size:13px;color:var(--muted);margin:0 0 10px}.modulecard button{font-size:12px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#fff1cb;color:#26153c;padding:10px 16px;border-radius:99px;font-weight:800;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50}.toast.show{opacity:1}footer{text-align:center;color:#9e8dbd;padding:28px 10px;font-size:12px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.sidebar{position:static;display:flex;overflow-x:auto;gap:5px;padding:7px}.side-title,.progressbox{display:none}.navbtn{width:auto;white-space:nowrap;font-size:12px;padding:9px}.navbtn .ni{display:none}.cols{grid-template-columns:1fr}}
+@media(max-width:560px){header{padding:12px}.brand small{display:none}.head-actions button{font-size:11px;padding:8px}.hero{padding:27px 14px}.layout{margin-top:12px}.lessonsteps{grid-template-columns:repeat(3,1fr)}.modulegrid{grid-template-columns:1fr}.viewhead h2{font-size:22px}.card{padding:13px}.table{font-size:11px}.table th,.table td{padding:6px}}
+html{-webkit-text-size-adjust:100%}
+@media(max-width:700px){body{font-size:15px}header{padding:10px 12px}.brandmark{width:38px;height:38px;font-size:20px}main{padding:6px 12px 40px}
+.hero{padding:18px 12px;border-radius:18px}.hero p,.hero .chips{display:none}.hero h1{font-size:26px;margin:6px 0 0}.eyebrow{font-size:10px}
+.sidebar{position:sticky;top:0;z-index:20;margin:0 -12px;border-radius:0;border-width:1px 0;background:#1b1237f2;backdrop-filter:blur(8px)}.navbtn{min-height:42px;flex:none}
+button{min-height:44px}button.small{min-height:36px}.control{min-width:100%}.canvasbox{height:230px}.viewhead{flex-direction:column}.table{display:block;overflow-x:auto}
+input,select,textarea{font-size:16px!important}.greeting{min-height:220px;padding:16px}.greeting h2{font-size:24px}.bulbrow{gap:12px;padding:12px}.rangoli{gap:4px;padding:8px}
+footer{padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))}.toast{bottom:calc(18px + env(safe-area-inset-bottom,0px));width:max-content;max-width:90%;text-align:center}}
+.bulb{width:auto;min-width:70px}.diyashape{width:86px;height:64px;margin:auto;position:relative}
+.diyashape:before{content:"";position:absolute;bottom:0;left:0;right:0;height:36px;background:linear-gradient(#e2823a,#8a3a10);border-radius:8px 8px 50px 50px/8px 8px 38px 38px;box-shadow:inset 0 5px 0 #f4a95a}
+.diyashape:after{content:"";position:absolute;left:50%;bottom:32px;width:18px;height:32px;margin-left:-9px;border-radius:50% 50% 50% 50%/65% 65% 35% 35%;background:#3a2a40;opacity:.35;transform:scale(.55);transform-origin:bottom;transition:.25s}
+.diyashape.on:after{background:radial-gradient(#fff 8%,#ffe26a 40%,#ff8a00);opacity:1;transform:scale(1);box-shadow:0 0 26px 13px #ffb03b88;animation:flick .3s infinite alternate}
+@keyframes flick{to{transform:scale(1.08,.93) rotate(2deg)}}
+#fbox{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;padding:14px 4px}#fbox i{display:block;width:28px;max-width:calc(12.5% - 10px);aspect-ratio:1;border-radius:50%;background:var(--bokeh,#ffd36d);border:0;opacity:.22;box-shadow:none;transition:opacity .18s,box-shadow .18s,transform .18s}#fbox i.on{opacity:1;box-shadow:0 0 0 2px #fff6,0 0 12px 4px var(--bokeh);transform:scale(1.06)}
+#fmodes,#rpat{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0;justify-content:center}
+#sequenceLeds{padding:6px 4px}.ropeRow{position:relative;display:flex;justify-content:space-around;padding-top:16px;margin:4px 0 26px}.ropeRow:before{content:"";position:absolute;top:8px;left:-4px;right:-4px;height:5px;border-radius:3px;background:repeating-linear-gradient(135deg,#c9a15a 0 4px,#7d5c2a 4px 8px)}
+.hb{position:relative;width:20px;height:30px;margin-top:12px;border-radius:50% 50% 55% 55%;background:#3a2a4a;border:1px solid #6a5290;transition:.15s}.hb:before{content:"";position:absolute;top:-13px;left:8px;width:2px;height:12px;background:#9a7a3c}.hb:after{content:"";position:absolute;top:-4px;left:5px;width:8px;height:5px;background:#777;border-radius:2px}
+.hb.on{background:var(--c);box-shadow:0 0 14px 5px var(--c);border-color:#fff8}
+
+/* New child-friendly simulator controls */
+.howto{border:1px solid #6c5791;background:linear-gradient(120deg,#302052,#21183f);border-radius:15px;padding:13px 16px;margin:12px 0 16px}
+.howto b{color:#ffe08a}.howto ol{margin:7px 0 0;padding-left:22px}.howto li{margin:3px 0}
+.dot-pattern{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:9px;max-width:390px;width:100%;margin:16px auto;padding:14px;background:#100b26;border:1px solid #705991;border-radius:16px}
+.dot-pattern button{padding:0;aspect-ratio:1;border-radius:50%;width:100%;height:auto;min-width:0;min-height:0;background:#40345b;border:2px solid #75618e;box-shadow:inset 0 1px 3px #0008}
+.dot-pattern button.lit{border-color:#fff4c7;box-shadow:0 0 10px currentColor}
+.house-legend{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;font-size:12px;margin-bottom:7px;color:#e8e1ff}
+.house-legend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:4px}
+.legend-out{background:#79bfff}.legend-in{background:#ffd36d;box-shadow:0 0 8px #ffd36d}
+.wish-choices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.wish-choice{background:#2c1e4d!important;color:#fff!important;border:2px solid #604b82!important;padding:8px!important;display:flex;flex-direction:column;gap:7px;align-items:center}
+.wish-choice.active{border-color:#ffd36d!important;box-shadow:0 0 0 2px #ffd36d55}
+.wish-art{height:105px;width:100%;border-radius:11px;display:grid;place-items:center;font-size:42px;position:relative;overflow:hidden}
+.wish-art span{position:absolute;font-size:25px;right:12px;top:8px}
+.art-diya{background:radial-gradient(circle,#ffbd59,#8c3762 65%,#24123f)}
+.art-rangoli{background:repeating-radial-gradient(circle,#e5a2d5 0 5px,#552f81 6px 12px,#f3c56b 13px 16px)}
+.art-lantern{background:linear-gradient(135deg,#153d69,#7a326f,#f0a34c)}
+.art-house{background:linear-gradient(135deg,#102b56,#3b276c,#d17a57)}
+.wish-to{font-size:19px;font-weight:800;margin:8px 0;color:#fff1bd}
+@media(max-width:620px){.wish-choices{grid-template-columns:repeat(2,minmax(0,1fr))}.dot-pattern{gap:6px;padding:10px;max-width:340px}}
+</style>
+</head>
+<body>
+<header><div class="brand"><div class="brandmark">🪔</div><div><b>JollyExplorers</b><small>Diwali Electronics Learning World</small></div></div><div class="head-actions"><button class="line small" id="reset">Reset progress</button><button class="small" onclick="showView('welcome')">⌂ Home</button></div></header>
+<main>
+<section class="hero" id="hero"><div class="eyebrow">Explore • Try • Learn • Enjoy</div><h1>Diwali Electronics Learning World</h1><p>Find out why festive lights glow, how rangoli LEDs mix colours and how a motor spins a chakri. Try every experiment safely on your screen!</p><div class="chips"><span class="chip">🔬 12 learning labs</span><span class="chip">🧪 Interactive experiments</span><span class="chip">🧠 Quizzes & challenges</span><span class="chip">📱 Works on phones</span></div></section>
+<div class="layout">
+<aside class="sidebar">
+ <div class="side-title">Learning world</div>
+ <button class="navbtn active" data-view="welcome"><span class="ni">🏠</span>Start here</button>
+ <button class="navbtn" data-view="map"><span class="ni">🗺️</span>All 11 labs</button>
+ <button class="navbtn" data-view="circuits"><span class="ni">🔋</span>Build a circuit</button>
+ <button class="navbtn" data-view="series"><span class="ni">🔗</span>Series & parallel</button>
+ <button class="navbtn" data-view="rgb"><span class="ni">🌈</span>RGB rangoli</button>
+ <button class="navbtn" data-view="timing"><span class="ni">⏱️</span>Flashing lights</button>
+ <button class="navbtn" data-view="sensor"><span class="ni">🌙</span>Automatic diya</button>
+ <button class="navbtn" data-view="maker"><span class="ni">🏠</span>Smart Diwali House</button>
+ <button class="navbtn" data-view="motor"><span class="ni">🌀</span>Motor chakri</button>
+ <button class="navbtn" data-view="fireworks"><span class="ni">🎆</span>Digital fireworks</button>
+ <button class="navbtn" data-view="sound"><span class="ni">🔔</span>Sound & buzzer</button>
+ <button class="navbtn" data-view="controller"><span class="ni">🤖</span>Controller lab</button>
+ <button class="navbtn" data-view="quiz"><span class="ni">🧠</span>Knowledge check</button>
+ <button class="navbtn" data-view="wishes"><span class="ni">💌</span>Diwali wishes</button>
+ <div class="progressbox"><b><span id="done">0</span> / 12 labs explored</b><div class="progressbar"><span id="bar"></span></div><div style="margin-top:7px">Spark points: <b id="points">0</b></div></div>
+</aside>
+<div class="content">
+<section class="view active" id="welcome">
+ <div class="viewhead"><div><div class="tag">Welcome, explorer!</div><h2>How to use this learning world</h2><p>Go at your own pace: look, try things, and answer the questions!</p></div></div>
+ <div class="card"><h3>Every lab follows the same learning journey</h3><div class="lessonsteps"><div class="step"><b>1</b>SEE IT<br>Meet the Diwali object</div><div class="step"><b>2</b>DISCOVER<br>Find its components</div><div class="step"><b>3</b>EXPERIMENT<br>Change & observe</div><div class="step"><b>4</b>UNDERSTAND<br>Explain why</div><div class="step"><b>5</b>CHALLENGE<br>Test what you learned</div></div><p class="muted">You don’t need any electronics parts. Everything here is a safe on-screen experiment, made simple for learning.</p></div>
+ <div class="cols"><div class="card"><h3>🎯 What you will learn</h3><ul><li>How batteries send power around a circuit</li><li>LEDs, resistors and RGB colours</li><li>Two ways to connect lights</li><li>Switches, timers and flashing patterns</li><li>Light sensors and automatic lights</li><li>Motors: how electricity makes a chakri spin</li><li>Buzzers, solar charging and controllers</li><li>Using power safely</li></ul></div><div class="card"><h3>🛡️ Safety first</h3><p>These are safe, low-voltage experiments on screen. Never touch wall sockets or mains wires. Ask a grown-up before building anything real.</p><div class="warning">Our fireworks are only animations. Never make or play with real fireworks.</div></div></div>
+ <div class="card"><h3>Start with a real-world question</h3><p><b>Why does a string of lights glow?</b> A battery sends power around a complete loop. This makes the LED glow. A small controller can make the lights blink.</p><button onclick="showView('circuits')">Start with the circuit lab →</button></div>
+</section>
+
+<section class="view" id="map"><div class="viewhead"><div><div class="tag">Your learning map</div><h2>12 Diwali learning labs</h2><p>Each lab helps you understand how everyday Diwali lights and gadgets work.</p></div></div><div class="modulegrid" id="modulegrid"></div></section>
+
+<section class="view" id="circuits">
+ <div class="viewhead"><div><div class="tag">Lab 01 • Build and explore</div><h2>🔋 Explore complete circuits</h2><p>Choose a circuit, see every part and switch the lights on and off.</p></div><span class="chip">Beginner</span></div>
+ <div class="card"><h3>SEE THE WHOLE CIRCUIT</h3><p>Choose a circuit below. The full picture shows how the battery, wires, switch, resistor and lights are connected.</p>
+  <div class="controls"><div class="control"><label for="circuitPick">Choose a circuit to explore</label><select id="circuitPick"><option value="one">1. One LED diya</option><option value="series">2. Two LEDs in one line</option><option value="parallel">3. Two LEDs on separate paths</option><option value="switch">4. Two LEDs with a switch</option></select></div></div>
+  <div class="simarea"><div id="circuitDiagram" style="width:100%;overflow-x:auto"></div><p id="circuitDescription" class="success">One battery powers one LED. The switch opens and closes the full path.</p>
+  <div class="controls"><button id="circuitSwitch">Close switch</button><span id="circuitState" class="muted">The path is open. The lights are OFF.</span></div></div>
+  <div class="explain"><b>Look carefully:</b> Follow the wires from the battery, around the circuit, and back to the battery. A complete path lets the lights glow.</div>
+ </div>
+ <div class="card"><h3>UNDERSTAND — Identify the parts</h3><table class="table"><tr><th>Part</th><th>Job in the circuit</th></tr><tr><td>Battery</td><td>Gives power to the circuit.</td></tr><tr><td>Wires</td><td>Carry power between the parts.</td></tr><tr><td>Switch</td><td>Turns the circuit on or off.</td></tr><tr><td>Resistor</td><td>Helps protect the LED.</td></tr><tr><td>LED</td><td>Makes light when connected the right way.</td></tr></table></div>
+ <div class="quiz"><b>CHECK YOUR UNDERSTANDING</b><p>What happens when the switch is open?</p><button class="alt" onclick="check('q1',false)">The LED glows brighter</button><button class="alt" onclick="check('q1',true)">The current path is broken</button><button class="alt" onclick="check('q1',false)">The battery makes more voltage</button><div class="feedback" id="q1"></div></div>
+ 
+</section>
+
+<section class="view" id="series">
+ <div class="viewhead"><div><div class="tag">Lab 02 • Circuit arrangements</div><h2>🔗 Series and parallel light strings</h2><p>Understand two ways decorative LEDs can be connected.</p></div></div>
+ <div class="card"><h3>DISCOVER IT</h3><div class="cols"><div><b>Series circuit</b><p>Components share one path. The same current passes through each component. One break can stop the whole string.</p></div><div><b>Parallel circuit</b><p>Components have separate branches across the supply. One branch can fail while other branches remain on, if designed correctly.</p></div></div></div>
+ <div class="card"><h3>EXPERIMENT — Compare the strings</h3><div class="controls"><div class="control"><label>Choose connection</label><select id="connection"><option value="series">Series string</option><option value="parallel">Parallel branches</option></select></div><div class="control"><label>Simulate one LED disconnected</label><select id="breakLed"><option value="none">No fault</option><option value="one">LED 2 disconnected</option></select></div></div><div class="simarea"><div id="stringVisual" class="bulbrow"></div><p id="stringExplain" class="success"></p></div></div>
+ <div class="quiz"><b>CHECK</b><p>In a simple series string, what can happen if one connection opens?</p><button class="alt" onclick="check('q3',true)">The whole path is interrupted</button><button class="alt" onclick="check('q3',false)">All other branches keep working independently</button><div class="feedback" id="q3"></div></div>
+ <div class="warning">Real decorative light strings vary widely and may use series/parallel groups, rectifiers and controllers. Never open or modify a mains-powered string. This simulation teaches basic circuit topology only.</div>
+</section>
+
+<section class="view" id="rgb">
+ <div class="viewhead"><div><div class="tag">Lab 03 • Colour and outputs</div><h2>🌈 RGB electronic rangoli</h2><p>Mix red, green and blue light, then colour a rangoli.</p></div></div>
+ <div class="card"><h3>DISCOVER IT</h3><p>An RGB LED has red, green and blue lights inside. By changing their brightness, we can make many colours. This is mixing light, not paint.</p></div>
+ <div class="card"><h3>EXPERIMENT — Paint with light</h3><div class="controls"><div class="control"><label>Red: <b id="rv">255</b></label><input id="red" type="range" min="0" max="255" value="255"></div><div class="control"><label>Green: <b id="gv">90</b></label><input id="green" type="range" min="0" max="255" value="90"></div><div class="control"><label>Blue: <b id="bv">180</b></label><input id="blue" type="range" min="0" max="255" value="180"></div></div>
+ <div class="simarea"><div id="rgbPreview" style="height:40px;border-radius:12px;background:rgb(255,90,180);box-shadow:0 0 25px rgb(255,90,180);margin:6px 0"></div><p id="rgbValue" class="success">Mixed output: RGB(255, 90, 180)</p>
+ <div id="rpat"></div><canvas id="rg" width="600" height="600" style="width:100%;max-width:440px;display:block;margin:8px auto;aspect-ratio:1;touch-action:manipulation;border-radius:16px;background:#0c0820"></canvas><p class="muted" style="text-align:center">Tap a shape to fill it with your colour. Tap again to clear it.</p>
+ <div class="controls"><button class="alt" onclick="fillRangoli('rainbow')">🌈 Fill rainbow</button><button class="alt" onclick="fillRangoli('mine')">🎨 Fill my colour</button><button class="line" onclick="clearRangoli()">Clear</button></div></div></div>
+ <div class="card"><h3>🎨 Draw your own light pattern</h3><p>Use the 10 × 10 dots like a tiny rangoli board. Choose a colour, then tap dots to light them up. Make a diya, flower, rocket, star or your own design!</p>
+  <div class="controls"><div class="control"><label for="dotColour">Choose your light colour</label><input type="color" id="dotColour" value="#ffcf57"></div><button class="alt" id="dotRainbow">Rainbow colours</button><button class="line" id="dotErase">Erase dots</button><button class="line" id="dotClear">Clear pattern</button></div>
+  <div id="dotPattern" class="dot-pattern" aria-label="10 by 10 pattern drawing board"></div>
+  <p class="muted" id="dotCount">0 of 100 dots lit</p>
+ </div>
+ <div class="quiz"><b>CHECK</b><p>Which three colours make up RGB?</p><button class="alt" onclick="check('q4',true)">Red, green and blue</button><button class="alt" onclick="check('q4',false)">Red, gold and black</button><div class="feedback" id="q4"></div></div>
+</section>
+
+<section class="view" id="timing">
+ <div class="viewhead"><div><div class="tag">Lab 04 • Timing and patterns</div><h2>⏱️ Flashing lights and RGB modes</h2><p>A tiny controller switches LEDs ON and OFF in patterns. Pick a mode!</p></div></div>
+ <div class="card"><h3>DISCOVER IT</h3><p>A flashing string repeats ON and OFF steps. A timer chip or microcontroller sets the speed and the order. RGB LEDs can also mix red, green and blue to change colour.</p><div class="explain"><b>Duty cycle</b> = ON time ÷ total time × 100%. 1 second ON and 3 seconds OFF is 25%.</div></div>
+ <div class="card"><h3>EXPERIMENT — Choose a mode</h3><div class="simarea"><div id="fbox"></div><div id="fmodes"></div><div class="explain" id="fdesc"></div>
+ <div class="controls"><div class="control"><label>Speed</label><input id="fspeed" type="range" min="5" max="100" value="60"></div><div class="control"><label>Number of lights: <b id="fnumV">16</b></label><input id="fnum" type="range" min="8" max="32" step="4" value="16"></div><div class="control"><label>Colours</label><select id="fpal"><option value="rgb">RGB multicolour</option><option value="gold">Warm gold</option><option value="ice">Pink and ice</option></select></div></div></div></div>
+ <div class="quiz"><b>CHECK</b><p>If ON time is 1 second and OFF time is 3 seconds, what is the duty cycle?</p><button class="alt" onclick="check('q5',true)">25%</button><button class="alt" onclick="check('q5',false)">75%</button><div class="feedback" id="q5"></div></div>
+</section>
+
+<section class="view" id="sensor">
+ <div class="viewhead"><div><div class="tag">Lab 05 • Sensors</div><h2>🌙 LDR automatic diya</h2><p>Make a decorative lamp respond to the amount of surrounding light.</p></div></div>
+ <div class="card"><h3>DISCOVER IT</h3><p>A light sensor checks how bright or dark it is. The circuit uses this information to switch a lamp on when it gets dark.</p></div>
+ <div class="card"><h3>EXPERIMENT — Day and night</h3><div class="simarea"><div class="bulbrow"><div class="bulb"><div id="ldrLamp" class="diyashape"></div><small>Auto diya</small></div><div style="font-size:50px" id="skyIcon">☀️</div></div><div class="controls"><div class="control"><label>Ambient light: <b id="lightLevel">80%</b></label><input id="ambient" type="range" min="0" max="100" value="80"></div><div class="control"><label>Switch-on threshold: <b id="threshold">35%</b></label><input id="thresholdRange" type="range" min="5" max="80" value="35"></div></div><p id="ldrState" class="success">Bright day — lamp OFF</p><p class="muted">This is a simplified sensor threshold model. A real circuit may use a voltage divider and transistor or comparator.</p></div></div>
+ <div class="quiz"><b>CHECK</b><p>When does an automatic Diwali pathway light usually need to turn ON?</p><button class="alt" onclick="check('q6',false)">Only when the sun is brightest</button><button class="alt" onclick="check('q6',true)">When the surroundings become dark</button><div class="feedback" id="q6"></div></div>
+</section>
+
+<section class="view" id="maker">
+ <div class="viewhead"><div><div class="tag">Lab 06 • Smart home</div><h2>🏠 Smart Diwali House</h2><p>Make your house lights turn on by themselves when evening comes.</p></div><span class="chip">Easy • Try it</span></div>
+ <div class="card"><h3>💡 What makes the house smart?</h3><p>A small light sensor checks whether it is bright or dark outside. A tiny controller follows a simple rule. When it gets dark, the house lights turn ON. When it becomes bright, they turn OFF.</p>
+  <div class="cols">
+   <div class="explain"><b>1. The sensor</b><br>Checks how much light is outside.</div>
+   <div class="explain"><b>2. The controller</b><br>Follows the rule you choose.</div>
+  </div>
+  <div class="explain"><b>3. The lights</b><br>Windows, the doorway and Diwali lights glow when it gets dark.</div>
+ </div>
+ <div class="card"><h3>🌞 Try day and night</h3><p>Move the first slider to change the light outside. Then watch your house. Move the second slider to choose when its lights should turn on.</p>
+  <div class="cols">
+   <div class="housebox"><div class="house-legend"><span><i class="legend-out"></i> Outside sky: blue</span><span><i class="legend-in"></i> House lights: warm yellow</span></div>
+    <svg viewBox="0 0 360 260" role="img" aria-label="A Diwali house with windows, doorway and festive lights">
+     <rect x="0" y="0" width="360" height="260" rx="12" fill="#152b59" id="houseSky"/><circle cx="310" cy="42" r="19" fill="#b7dcff" id="houseSun"/>
+     <path d="M35 105 L180 20 L325 105" fill="#875083" stroke="#f4bd78" stroke-width="7"/>
+     <rect x="60" y="103" width="240" height="120" rx="5" fill="#a85e65" stroke="#f4bd78" stroke-width="5"/>
+     <path d="M72 108 Q180 135 288 108" fill="none" stroke="#ffd36d" stroke-width="3"/>
+     <circle cx="95" cy="113" r="5" class="housebulb" fill="#4a315c" stroke="#ffd58a" stroke-width="2"/>
+     <circle cx="130" cy="123" r="5" class="housebulb" fill="#4a315c" stroke="#ffd58a" stroke-width="2"/>
+     <circle cx="165" cy="128" r="5" class="housebulb" fill="#4a315c" stroke="#ffd58a" stroke-width="2"/>
+     <circle cx="200" cy="128" r="5" class="housebulb" fill="#4a315c" stroke="#ffd58a" stroke-width="2"/>
+     <circle cx="235" cy="123" r="5" class="housebulb" fill="#4a315c" stroke="#ffd58a" stroke-width="2"/>
+     <circle cx="270" cy="113" r="5" class="housebulb" fill="#4a315c" stroke="#ffd58a" stroke-width="2"/>
+     <rect id="w1" x="85" y="145" width="58" height="48" fill="#4a315c" stroke="#ffd58a" stroke-width="4"/>
+     <rect id="w2" x="217" y="145" width="58" height="48" fill="#4a315c" stroke="#ffd58a" stroke-width="4"/>
+     <rect x="158" y="160" width="44" height="63" fill="#633c5b" stroke="#f4bd78" stroke-width="4"/>
+     <circle id="porchLight" cx="180" cy="151" r="7" fill="#4a315c" stroke="#ffe6a1" stroke-width="2"/>
+     <path d="M145 225 Q180 210 215 225" fill="none" stroke="#ffd36d" stroke-width="3"/>
+     <path d="M145 235 Q180 220 215 235" fill="none" stroke="#ffd36d" stroke-width="2"/>
+    </svg>
+   </div>
+   <div>
+    <div class="control"><label for="houseLight">Light outside</label><input type="range" id="houseLight" min="0" max="100" value="70"><b id="houseLightVal">70%</b><p class="muted">This slider changes the outside sky light (blue). The house lights (warm yellow) are separate.</p></div>
+    <div class="control" style="margin-top:10px"><label for="houseLimit">Turn the house lights ON when outside light goes below</label><input type="range" id="houseLimit" min="10" max="90" value="35"><b id="houseLimitVal">35%</b></div>
+    <p id="houseResult" class="success" aria-live="polite">It is bright outside. House lights are OFF.</p>
+    <button class="alt" onclick="runHouse()">Check my house</button>
+   </div>
+  </div>
+ </div>
+ <div class="card"><h3>🧠 What did you notice?</h3><p id="houseLesson">When it gets dark, the house lights turn ON automatically.</p><p class="muted">Try setting the outside light to 15%, then move it to 85%. Watch the house change!</p></div>
+ <div class="quiz"><b>QUICK QUESTION</b><p>When should the Smart Diwali House turn its lights ON?</p><button class="alt" onclick="check('q7',true)">When it gets dark outside</button><button class="alt" onclick="check('q7',false)">Only when the sun is very bright</button><div class="feedback" id="q7"></div></div>
+</section>
+
+<section class="view" id="motor">
+ <div class="viewhead"><div><div class="tag">Lab 06 • Motors</div><h2>🌀 Motor chakri lab</h2><p>A chakri spins when a small electric motor turns it. Let’s control the spin!</p></div></div>
+ <div class="card"><div class="simarea"><div class="canvasbox"><canvas id="motorCv" width="600" height="300"></canvas></div>
+ <div class="controls">
+ <div class="control"><label>🔋 Battery: <b id="mvV">6.0</b> V</label><input type="range" id="mV" min="15" max="90" value="60"></div>
+ <div class="control"><label>⚡ Speed control (PWM): <b id="mvD">70</b>%</label><input type="range" id="mD" min="0" max="100" value="70"></div>
+ <div class="control"><label>🏋️ Load on the motor</label><select id="mL"><option value="0">Light chakri</option><option value="1">Medium chakri</option><option value="2">Heavy wheel</option></select></div>
+ <div class="control"><label>Spinner type</label><select id="mT"><option value="chakri">🌀 Chakri (LED arms)</option><option value="wheel">🎡 Ferris wheel</option><option value="pinwheel">🎐 Pinwheel (phirki)</option><option value="aarti">🪔 Diya aarti thali</option><option value="star">⭐ Spinning star lantern</option></select></div><div class="control"><label>Direction</label><button class="alt" id="mR">↻ Clockwise</button></div>
+ </div><div class="explain" id="mOut"></div></div></div>
+ <div class="card"><h3>How does a motor work?</h3><p>Inside the motor, electricity flows through a coil that sits between magnets. The magnets push the coil, so the shaft turns. A stronger push means faster spinning.</p><p><b>Speed control (PWM):</b> a controller switches the power on and off very fast. The longer it stays “on”, the faster the motor spins.</p><p><b>Glowing rings:</b> when LEDs spin fast, your eyes keep each flash for a moment, so the LEDs blur into a glowing circle. This is called persistence of vision.</p></div>
+ <div class="warning">Real motors can hurt fingers. Build with an adult and keep hands away from spinning parts.</div>
+ <div class="card"><h3>Quick check</h3><div class="quiz"><p>What happens if the controller keeps the power “on” for longer?</p><button class="alt" onclick="check('fbM',true)">The chakri spins faster</button><button class="alt" onclick="check('fbM',false)">The chakri spins slower</button><div class="feedback" id="fbM"></div></div></div>
+</section>
+<section class="view" id="fireworks">
+ <div class="viewhead"><div><div class="tag">Lab 07 • Digital outputs</div><h2>🎆 Digital fireworks</h2><p>Tap the sky to fire a safe screen firework.</p></div></div>
+ <div class="card"><h3>DISCOVER IT</h3><p>A button press is a signal to the computer. The computer responds by showing a firework on the screen. These are only pictures, not real fireworks.</p></div>
+ <div class="card"><h3>EXPERIMENT — Light up the night</h3><div class="canvasbox" style="height:340px"><canvas id="sky" style="touch-action:manipulation"></canvas></div>
+ <div class="controls"><button id="launch">🚀 Launch</button><button class="alt" id="finale">🎇 Grand finale</button><button class="alt" id="auto">Start timed sequence</button><button class="line" id="clearSky">Clear</button></div>
+ <div class="controls"><div class="control"><label>Style</label><select id="fwType"><option value="mix">Surprise mix</option><option value="peony">Peony</option><option value="ring">Ring</option><option value="willow">Golden willow</option><option value="crackle">Crackle</option><option value="heart">Heart</option><option value="spiral">Spiral</option></select></div><div class="control"><label>Colours</label><select id="fwCol"><option value="mix">Festive mix</option><option value="gold">Golden</option><option value="pink">Pink and ice</option></select></div><div class="control"><label>Sequence speed</label><select id="interval"><option value="1500">Slow</option><option value="800">Medium</option><option value="350">Fast</option></select></div><div class="control"><label><input type="checkbox" id="fwSnd"> Bang sound</label><p class="muted">Bursts fired: <b id="fwCount">0</b></p></div></div></div>
+ <div class="warning">These fireworks are only pixels on a screen. Never make or play with real fireworks.</div>
+ <div class="quiz"><b>CHECK</b><p>In this activity, what is the input?</p><button class="alt" onclick="check('q8',true)">Your tap or button press</button><button class="alt" onclick="check('q8',false)">The glowing particles</button><div class="feedback" id="q8"></div></div>
+</section>
+
+<section class="view" id="sound">
+ <div class="viewhead"><div><div class="tag">Lab 08 • Sound output</div><h2>🔔 Sound modules and buzzers</h2><p>Hear how electronics make different kinds of sound.</p></div></div>
+ <div class="card"><h3>DISCOVER IT</h3><p>A speaker or buzzer changes an electrical signal into sound. The speed of the signal changes how high or low the sound is.</p></div>
+ <div class="card"><h3>EXPERIMENT 1 — Sound modules</h3><p class="muted">Tap a module to hear it. Keep the volume low.</p><div class="modulegrid" id="smods"></div><div class="explain" id="sdesc">Tap a module to learn how it works.</div><div class="control"><label>Volume</label><input id="vol" type="range" min="5" max="100" value="40"></div></div>
+ <div class="card"><h3>EXPERIMENT 2 — Build your own tone</h3><div class="controls"><div class="control"><label>Frequency: <b id="freqVal">660 Hz</b></label><input type="range" id="freq" min="180" max="2000" value="660"></div><div class="control"><label>Wave shape</label><select id="wave"><option>sine</option><option>square</option><option>triangle</option><option>sawtooth</option></select></div><button id="tone">▶ Play tone</button></div><p id="toneNote" class="success">Sine: smooth and soft, like a flute.</p></div>
+ <div class="card"><h3>EXPERIMENT 3 — Cracker sounds (virtual)</h3><p class="muted">Tap a cracker to hear it and watch how it looks. The blue line is the sound wave. These are only digital sounds.</p><canvas id="cAn" width="600" height="200" style="width:100%;border-radius:12px;background:#0c0820;display:block"></canvas><div class="modulegrid" id="ckgrid" style="margin-top:10px"></div><div class="explain" id="cdesc">Tap a cracker to hear and see it.</div><div class="warning">Real crackers can burn you and hurt your ears. Enjoy only the digital versions here.</div></div>
+ <div class="card"><h3>🕵️ Sound detective</h3><p class="muted">Listen to a mystery sound, then pick which cracker made it. 5 rounds!</p><div class="controls"><button id="sqPlay">▶ Play mystery sound</button><button class="alt" id="sqAgain">🔁 Hear again</button></div><div id="sqOpts" class="controls"></div><p class="success" id="sqFb"></p></div>
+ <div class="quiz"><b>CHECK</b><p>What does frequency mainly change in a simple tone?</p><button class="alt" onclick="check('q9',true)">The pitch</button><button class="alt" onclick="check('q9',false)">The wire length</button><div class="feedback" id="q9"></div></div>
+</section>
+
+<section class="view" id="controller">
+ <div class="viewhead"><div><div class="tag">Lab 09 • Programmable systems</div><h2>🤖 Diwali light controller</h2><p>See how a small controller can run a light pattern.</p></div></div>
+ <div class="card"><h3>DISCOVER IT</h3><p>A controller is a tiny computer. It follows instructions and tells the lights when to turn on, turn off or change patterns.</p></div>
+ <div class="card"><h3>EXPERIMENT — Choose a light sequence</h3><div class="simarea"><div id="sequenceLeds"><div class="ropeRow"></div><div class="ropeRow"></div></div><div class="controls"><div class="control"><label>Pattern</label><select id="pattern"><option value="chase">Chasing light</option><option value="opposite">Two-way chase</option><option value="zig">Zig-zag</option><option value="rows">Line by line</option><option value="sparkle">Sparkle</option><option value="fill">Fill up</option><option value="all">All together</option></select></div><div class="control"><label>Step delay</label><input type="range" id="delay" min="100" max="1000" step="100" value="500"><b id="delayVal">500 ms</b></div><button id="runPattern">▶ Run program</button><button class="line" id="stopPattern">Stop</button></div><p class="muted">The simulator runs a pattern. A real controller would need a correctly designed driver circuit for its LED load.</p></div></div>
+ <div class="quiz"><b>CHECK</b><p>What is a microcontroller doing in this example?</p><button class="alt" onclick="check('q11',true)">Following instructions to control outputs</button><button class="alt" onclick="check('q11',false)">Generating its own sunlight</button><div class="feedback" id="q11"></div></div>
+</section>
+
+<section class="view" id="quiz">
+ <div class="viewhead"><div><div class="tag">Lab 10 • Review</div><h2>🧠 Knowledge check</h2><p>Choose the right answer to launch a colourful rocket. Get all 10 right for a grand finale!</p></div></div>
+ <div class="card"><h3>Quick-fire questions</h3><div id="quizList"></div><p class="success" id="quizScore"></p><button onclick="startQuiz()">Try again</button></div>
+</section>
+
+<section class="view" id="wishes">
+ <div class="viewhead"><div><div class="tag">Lab 12 • Share joy</div><h2>💌 JollyExplorers Diwali wishes</h2><p>Read wishes from the JollyExplorers team and share one with your family.</p></div></div>
+ <div class="card"><h3>🖼️ Choose a Diwali greeting picture</h3><p>Pick a picture. Each picture comes with a different Diwali wish.</p><div class="wish-choices" id="wishChoices">
+  <button class="wish-choice active" data-wish="0"><span class="wish-art art-diya">🪔<span>✨</span></span><b>Glowing Diyas</b></button>
+  <button class="wish-choice" data-wish="1"><span class="wish-art art-rangoli">🌸<span>🌼</span></span><b>Flower Rangoli</b></button>
+  <button class="wish-choice" data-wish="2"><span class="wish-art art-lantern">🏮<span>⭐</span></span><b>Festive Lanterns</b></button>
+  <button class="wish-choice" data-wish="3"><span class="wish-art art-house">🏠<span>💡</span></span><b>Bright Home</b></button>
+ </div></div>
+ <div class="card"><h3>✍️ Make your family wish</h3><div class="cols">
+  <div class="control"><label for="wishTo">To (family member)</label><input id="wishTo" maxlength="35" placeholder="e.g. Dear Amma and Nanna"></div>
+  <div class="control"><label for="wishFrom">From (your name)</label><input id="wishFrom" maxlength="35" placeholder="Your name"></div>
+ </div><div class="controls"><button class="alt" id="nextWish">Change the wish quote ✨</button></div></div>
+ <div class="greeting" id="greeting"><div class="big">🪔</div><h2>Happy Diwali!</h2><p id="wishQuote"></p><div class="wish-to" id="wishToPreview"></div><b id="wishFromPreview">WITH LOVE</b></div>
+ <div class="controls" style="justify-content:center"><button id="shareCard">Share / Save greeting image</button></div>
+ <p class="muted" style="text-align:center">Your greeting is made on this device. You can share it or save the picture and send it to your family.</p>
+</section>
+
+</div></div>
+</main>
+<footer>JollyExplorers • Learn by exploring • All circuits and fireworks are virtual educational simulations.<br>Ask a grown-up before trying real electronics. Never experiment with mains electricity.</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const $=id=>document.getElementById(id);
+const labs=[['circuits','🔋','Complete LED circuit','See how a battery lights an LED'],['series','🔗','Series and parallel','Two ways to connect light strings'],['rgb','🌈','RGB rangoli','Mix red, green and blue light'],['timing','⏱️','Flashing lights','Make lights blink in patterns'],['sensor','🌙','Automatic diya','A diya that turns on when it gets dark'],['maker','🏠','Smart Diwali House','Make house lights turn on by themselves'],['motor','🌀','Motor chakri','See how electricity makes things spin'],['fireworks','🎆','Digital fireworks','Launch safe fireworks on your screen'],['sound','🔔','Sound and buzzer','Hear different electronic sounds'],['controller','🤖','Light controller','Choose a pattern for the lights'],['quiz','🧠','Knowledge check','Answer questions and launch rockets'],['wishes','💌','Diwali wishes','Read and share Diwali wishes']];
+const labIds=labs.map(l=>l[0]);
+const moduleGrid=$('modulegrid');labs.forEach((t,i)=>{let b=document.createElement('div');b.className='modulecard';b.innerHTML=`<div class="emoji">${t[1]}</div><h3>Lab ${String(i+1).padStart(2,'0')} · ${t[2]}</h3><p>${t[3]}</p><button class="alt" onclick="showView('${t[0]}')">Open lab →</button>`;moduleGrid.appendChild(b)});
+let completed=JSON.parse(localStorage.getItem('je_labs')||'[]'),points=Number(localStorage.getItem('je_points2')||0);
+function saveProgress(){localStorage.setItem('je_labs',JSON.stringify(completed));localStorage.setItem('je_points2',points);$('done').textContent=completed.length;$('points').textContent=points;$('bar').style.width=(completed.length/12*100)+'%'}
+function markLab(id){if(labIds.includes(id)&&!completed.includes(id)){completed.push(id);points+=10;saveProgress();toast('Lab explored! +10 explorer points ✨')}}
+function toast(s){let t=$('toast');t.textContent=s;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2300)}
+
+// Show simple, step-by-step instructions whenever a child opens a lab.
+const labGuides={
+ circuits:['Choose one of the circuit pictures.','Press Close switch to light the LED(s).','Press Open switch and watch the lights go off.','Choose another circuit and compare the paths.'],
+ series:['Choose series or parallel.','Disconnect one light using the menu.','Watch which lights stay on.','Try the other connection and compare.'],
+ rgb:['Move the red, green and blue sliders.','Watch the colour change.','Tap the rangoli shapes to colour them.','Try the 10 × 10 dot board to draw your own design.'],
+ timing:['Choose a flashing-light pattern.','Change the speed and number of lights.','Try another colour choice.','Watch how the pattern changes.'],
+ sensor:['Move the light slider from bright to dark.','Watch the diya turn on or off.','Change the switch-on level.','Try to find the level where it changes.'],
+ maker:['Move the outside-light slider to make day or night.','Watch the sky colour change.','Set when the house lights should turn on.','Compare the cool blue outside with the warm yellow house lights.'],
+ motor:['Choose a spinning object.','Change the speed slider.','Change the power setting.','Watch how the movement changes.'],
+ fireworks:['Choose a firework style and colour.','Tap Launch to send one into the sky.','Try the Grand finale button.','Remember: these are screen pictures only.'],
+ sound:['Choose a sound from the list.','Press Play and listen.','Try another sound.','Change the settings and notice the difference.'],
+ controller:['Choose a light pattern.','Press the buttons to change the lights.','Try a different speed or colour.','See how the controller follows your choice.'],
+ quiz:['Read each question carefully.','Tap the answer you think is right.','A correct answer launches a rocket.','Try all 10 questions and see your score.'],
+ wishes:['Choose one of the greeting pictures.','Type the family member’s name.','Add your name in the From box.','Change the quote, then share or save the greeting picture.']
+};
+function addLabGuide(id){
+ const view=$(id),guide=labGuides[id];if(!view||!guide||view.querySelector('.howto'))return;
+ const box=document.createElement('div');box.className='howto';
+ box.innerHTML='<b>👣 How to use this lab</b><ol>'+guide.map(s=>'<li>'+s+'</li>').join('')+'</ol>';
+ const head=view.querySelector('.viewhead');if(head)head.insertAdjacentElement('afterend',box);
+}
+Object.keys(labGuides).forEach(addLabGuide);
+
+function showView(id){if(typeof stopAllMedia==='function')stopAllMedia();document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));$(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));let map={'welcome':null,'map':null,'circuits':0,'led':1,'series':2,'rgb':3,'timing':4,'sensor':5,'maker':6,'motor':7,'fireworks':8,'sound':9,'controller':10,'quiz':11,'wishes':12};if(map[id]!==undefined&&map[id]!==null)markLab(id);window.scrollTo({top:0,behavior:'smooth'});if(id==='fireworks')resizeCanvas()}
+document.querySelectorAll('.navbtn').forEach(b=>b.onclick=()=>showView(b.dataset.view));
+function check(id,ok){$(id).textContent=ok?'Correct! Well done! 🌟':'Not quite. Think about the explanation and try again.';if(ok&&!$(id).dataset.reward){$(id).dataset.reward='1';points+=3;saveProgress();}}
+
+
+$('reset').onclick=()=>{if(confirm('Reset your saved progress and notes on this device?')){completed=[];points=0;document.querySelectorAll('.feedback').forEach(x=>{x.textContent='';delete x.dataset.reward});saveProgress();toast('Progress reset. You can explore again!')}};
+saveProgress();
+// Lab 1: switch between complete built-in circuit diagrams
+let circuitOn=false;
+const circuitInfo={
+ one:{name:'One LED diya',desc:'One battery powers one LED. The switch opens and closes the full path.',count:1,layout:'one'},
+ series:{name:'Two LEDs in one line',desc:'Both LEDs share one path. If the path breaks, both lights go out.',count:2,layout:'series'},
+ parallel:{name:'Two LEDs on separate paths',desc:'Each LED has its own path. One light can stay on if the other path is broken.',count:2,layout:'parallel'},
+ switch:{name:'Two LEDs with a switch',desc:'The switch controls both lights together. Open it to stop the power flow.',count:2,layout:'switch'}
+};
+function drawCircuit(){
+ const key=$('circuitPick').value,info=circuitInfo[key],leds=info.count;
+ const glow=circuitOn?'#ffe16d':'#4a315c';
+ let diagram='';
+ if(info.layout==='one'){
+  // Lab 1 single diya: use the same rounded bowl-and-flame look as Lab 2,
+  // and route the circuit wires to either side of the diya rather than behind it.
+  const singleDiya=`<g transform="translate(430 120)"><path d="M-27 -3 Q-25 9 -17 17 Q0 27 17 17 Q25 9 27 -3 Q17 4 0 5 Q-17 4 -27 -3Z" fill="#b85d25" stroke="#f0b66b" stroke-width="2.5"/><path d="M-22 0 Q0 9 22 0" fill="none" stroke="#e9a45b" stroke-width="2"/><path d="M0 -5 C-16 -17 -4 -31 1 -43 C16 -28 13 -14 0 -5Z" fill="${glow}" stroke="#fff1b8" stroke-width="2"/><path d="M0 -9 C-6 -18 0 -25 2 -30 C9 -19 7 -12 0 -9Z" fill="#fff5c4"/></g>`;
+  const switchPart=circuitOn?'<path d="M170 48 H220"/>':'<path d="M170 48 L215 25"/>';
+  diagram=`<svg viewBox="0 0 640 250" role="img" aria-label="Battery, switch, resistor and one traditional diya connected in a complete circuit" style="width:100%;min-width:440px">
+   <g fill="none" stroke="#ffd36d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 48 H150 M150 48 H170 M220 48 H235 L295 48 L335 48 L350 48 L365 48 V120 H403 M457 120 H535 V185 H90 V48"/>
+    ${switchPart}
+    <path d="M295 48 l10 -12 10 24 10 -24 10 24 10 -12"/>
+   </g>
+   <g stroke="#fff0b0" stroke-width="4"><path d="M90 105 V165"/><path d="M72 118 V152"/></g>
+   <text x="25" y="205" fill="#fff" font-size="18">Battery</text>
+   ${singleDiya}
+   <text x="465" y="165" fill="#fff" font-size="16">Diya 1</text>
+   <text x="160" y="18" fill="#fff" font-size="16">Switch</text><text x="300" y="18" fill="#fff" font-size="16">Resistor</text>
+   <g fill="#9defff" font-size="16"><text x="235" y="230">One complete loop through Diya 1</text></g>
+  </svg>`;
+ }else if(info.layout==='parallel'){
+  diagram=`<svg viewBox="0 0 640 280" role="img" aria-label="Complete battery circuit with two separate LED paths" style="width:100%;min-width:440px">
+   <g fill="none" stroke="#ffd36d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 48 H535 V232 H100 V48"/><path d="M100 48 H205"/><path d="M205 48 H260"/><path d="M260 48 H535"/>
+    <path d="M205 48 V112 H260"/><path d="M260 112 H535 V48"/>
+    <path d="M205 48 V190 H260"/><path d="M260 190 H535 V48"/>
+   </g>
+   <g stroke="#fff0b0" stroke-width="4"><path d="M100 105 V175"/><path d="M82 119 V161"/></g><text x="35" y="205" fill="#fff" font-size="18">Battery</text>
+   <g stroke="#fff" stroke-width="3" fill="none"><path d="M250 48 l10 -12 10 24 10 -24 10 24 10 -12"/></g><text x="270" y="22" fill="#fff" font-size="16">Resistor</text>
+   <g stroke="#ffe2a0" stroke-width="2"><path d="M368 121 Q370 139 382 145 Q395 151 408 145 Q420 139 422 121 Q408 130 395 130 Q382 130 368 121Z" fill="#b85d25"/><path d="M368 199 Q370 217 382 223 Q395 229 408 223 Q420 217 422 199 Q408 208 395 208 Q382 208 368 199Z" fill="#b85d25"/><path d="M395 121 C378 106 393 91 397 81 C411 98 406 111 395 121Z" fill="${glow}"/><path d="M395 199 C378 184 393 169 397 159 C411 176 406 189 395 199Z" fill="${glow}"/><path d="M396 116 C389 106 396 98 398 94 C405 104 402 112 396 116Z" fill="#fff5c4"/><path d="M396 194 C389 184 396 176 398 172 C405 182 402 190 396 194Z" fill="#fff5c4"/></g>
+   <g fill="#fff" font-size="16"><text x="425" y="130">Diya 1</text><text x="425" y="208">Diya 2</text></g>
+   <g fill="#9defff" font-size="16"><text x="118" y="260">Two separate paths</text></g></svg>`;
+ }else{
+  // Match the fuller traditional diya illustration used in Lab 2.
+  const diyaSvg=(cx,cy)=>`<g transform="translate(${cx} ${cy})"><path d="M-27 -2 Q-25 10 -17 18 Q0 27 17 18 Q25 10 27 -2 Q18 5 0 5 Q-18 5 -27 -2Z" fill="#b85d25" stroke="#f0b66b" stroke-width="2.5"/><path d="M-22 1 Q0 10 22 1" fill="none" stroke="#e9a45b" stroke-width="2"/><path d="M0 -4 C-17 -17 -3 -31 1 -43 C17 -27 13 -13 0 -4Z" fill="${glow}" stroke="#fff1b8" stroke-width="2"/><path d="M0 -8 C-6 -17 0 -24 2 -29 C9 -18 7 -11 0 -8Z" fill="#fff5c4" opacity=".9"/></g>`;
+  const count=leds, ledParts=count===1?diyaSvg(430,61):diyaSvg(390,61)+diyaSvg(475,61);
+  const labels=count===1?'<text x="455" y="95">Diya</text>':'<text x="370" y="105">Diya 1</text><text x="455" y="105">Diya 2</text>';
+  const switchPart= circuitOn?'<path d="M170 48 H220"/>':'<path d="M170 48 L215 25"/>';
+  diagram=`<svg viewBox="0 0 640 230" role="img" aria-label="Traditional diya circuit with battery, switch and resistor" style="width:100%;min-width:440px">
+   <g fill="none" stroke="#ffd36d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 48 H150 M150 48 H170 M220 48 H235 H285 H535 V185 H90 V48"/>
+    ${switchPart}
+    <path d="M285 48 l10 -12 10 24 10 -24 10 24 10 -12 H535"/>
+   </g>
+   <g stroke="#fff0b0" stroke-width="4"><path d="M90 105 V165"/><path d="M72 118 V152"/></g>
+   <text x="25" y="205" fill="#fff" font-size="18">Battery</text>
+   <g fill="${glow}" stroke="#fff1b8" stroke-width="3">${ledParts}</g>
+   ${labels}
+   <text x="160" y="18" fill="#fff" font-size="16">Switch</text><text x="315" y="18" fill="#fff" font-size="16">Resistor</text>
+   <g fill="#9defff" font-size="16"><text x="235" y="220">${key==='series'?'Two lights in one line':'One complete loop'}</text></g>
+  </svg>`;
+ }
+ $('circuitDiagram').innerHTML=diagram;
+ $('circuitDescription').textContent=info.desc;
+ $('circuitSwitch').textContent=circuitOn?'Open switch':'Close switch';
+ $('circuitState').textContent=circuitOn?'The path is complete. The lights are ON.':'The path is open. The lights are OFF.';
+}
+$('circuitPick').onchange=()=>{circuitOn=false;drawCircuit()};
+$('circuitSwitch').onclick=()=>{circuitOn=!circuitOn;drawCircuit()};
+drawCircuit();
+// Series parallel
+function drawString(){let mode=$('connection').value,fault=$('breakLed').value==='one',el=$('stringVisual');el.innerHTML='';for(let i=0;i<4;i++){let d=document.createElement('div');d.className='bulb';d.innerHTML=`<div class="bulbshape" aria-label="traditional diya"></div><small>Diya ${i+1}</small>`;let on=!(fault&&(mode==='parallel'?i===1:true));if(on)d.querySelector('.bulbshape').classList.add('on');el.appendChild(d)}$('stringExplain').textContent=fault?(mode==='series'?'One break opens the single path, so all LEDs go OFF.':'One branch is disconnected; the other branches can remain ON.'):(mode==='series'?'One path: the same current passes through each LED.':'Separate branches: each branch is connected across the supply.')}
+$('connection').onchange=drawString;$('breakLed').onchange=drawString;drawString();
+
+// Lab 3: 10 by 10 light-dot pattern drawing board
+(function(){
+ const board=$('dotPattern');if(!board)return;
+ let rainbow=false,idx=0;const colours=['#ff5b78','#ffcf57','#59d8ff','#8de7a5','#c99aff','#ff9f62'];
+ for(let i=0;i<100;i++){
+  const d=document.createElement('button');d.type='button';d.setAttribute('aria-label','Pattern dot '+(i+1));
+  d.onclick=()=>{const c=rainbow?colours[idx++%colours.length]:$('dotColour').value;d.style.background=c;d.style.color=c;d.classList.add('lit');updateCount()};
+  board.appendChild(d);
+ }
+ function updateCount(){$('dotCount').textContent=board.querySelectorAll('.lit').length+' of 100 dots lit'}
+ $('dotRainbow').onclick=()=>{rainbow=true;toast('Rainbow mode selected. Tap dots to add colours!')};
+ $('dotErase').onclick=()=>{rainbow=false;board.querySelectorAll('button').forEach(b=>{b.style.background='#40345b';b.style.color='';b.classList.remove('lit')});toast('Tap dots to erase them.')};
+ $('dotClear').onclick=()=>{board.querySelectorAll('button').forEach(b=>{b.style.background='#40345b';b.style.color='';b.classList.remove('lit')});updateCount()};
+ $('dotColour').oninput=()=>rainbow=false;
+ board.addEventListener('contextmenu',e=>{e.preventDefault();const b=e.target.closest('button');if(b){b.style.background='#40345b';b.style.color='';b.classList.remove('lit');updateCount()}});
+})();
+
+// RGB rangoli
+(function(){const cv=$('rg'),x=cv.getContext('2d'),C=300,T=6.2832;let regs=[],pat='lotus';
+const ell=(r,n,rx,ry,o)=>{for(let i=0;i<n;i++){const a=i*T/n+o,p=new Path2D();p.ellipse(C+Math.cos(a)*r,C+Math.sin(a)*r,rx,ry,a,0,T);regs.push({p,a,c:null})}};
+const circ=(r,n,rad,o)=>{for(let i=0;i<n;i++){const a=i*T/n+o,p=new Path2D();p.arc(C+Math.cos(a)*r,C+Math.sin(a)*r,rad,0,T);regs.push({p,a,c:null})}};
+const star=(n,ro,ri,o)=>{const p=new Path2D();for(let i=0;i<n*2;i++){const a=i*Math.PI/n+o,r=i%2?ri:ro;p[i?'lineTo':'moveTo'](C+Math.cos(a)*r,C+Math.sin(a)*r)}p.closePath();regs.push({p,a:o,c:null})};
+const dia=(r,n,w,o)=>{for(let i=0;i<n;i++){const a=i*T/n+o,p=new Path2D(),X=C+Math.cos(a)*r,Y=C+Math.sin(a)*r;p.moveTo(X+Math.cos(a)*w,Y+Math.sin(a)*w);p.lineTo(X+Math.cos(a+1.57)*w*.6,Y+Math.sin(a+1.57)*w*.6);p.lineTo(X-Math.cos(a)*w,Y-Math.sin(a)*w);p.lineTo(X+Math.cos(a-1.57)*w*.6,Y+Math.sin(a-1.57)*w*.6);p.closePath();regs.push({p,a,c:null})}};
+const ray=(n,ri,ro,w,o)=>{for(let i=0;i<n;i++){const a=i*T/n+o,p=new Path2D();p.moveTo(C+Math.cos(a-w/ri)*ri,C+Math.sin(a-w/ri)*ri);p.lineTo(C+Math.cos(a)*ro,C+Math.sin(a)*ro);p.lineTo(C+Math.cos(a+w/ri)*ri,C+Math.sin(a+w/ri)*ri);p.closePath();regs.push({p,a,c:null})}};
+const poly=(r,n,o)=>{const p=new Path2D();for(let i=0;i<n;i++){const a=i*T/n+o;p[i?'lineTo':'moveTo'](C+Math.cos(a)*r,C+Math.sin(a)*r)}p.closePath();regs.push({p,a:r/50,c:null})};
+const hub=r=>{const p=new Path2D();p.arc(C,C,r,0,T);regs.push({p,a:0,c:null})};
+const P={lotus(){circ(262,32,12,0);ell(200,16,46,18,0);ell(135,12,40,16,.2);ell(78,8,30,13,0);hub(30)},
+star(){circ(268,24,11,0);star(12,285,200,0);star(12,190,120,.13);star(8,110,60,0);hub(22)},
+diamond(){dia(235,16,36,0);dia(160,12,30,.26);dia(95,8,24,0);circ(268,48,6,0);hub(32)},
+sun(){circ(272,36,7,0);ray(24,150,265,22,0);ray(24,100,185,16,.13);circ(70,12,18,0);hub(38)},
+flower(){circ(282,24,9,0);ell(165,6,110,52,0);ell(165,6,70,26,.52);ell(80,12,40,17,.13);hub(34)},
+weave(){[290,250,210,170,130,90,50].forEach((r,i)=>poly(r,4,i%2?0:.785));circ(0,1,1,0)},
+spiral(){for(let i=0;i<44;i++){const a=i*.55,r=16+i*5.6,p=new Path2D();p.arc(C+Math.cos(a)*r,C+Math.sin(a)*r,5+i*.3,0,T);regs.push({p,a,c:null})}},
+mandala(){circ(265,40,9,0);ell(212,20,40,13,0);circ(160,20,16,.15);ell(105,10,34,16,.3);circ(55,6,14,0);hub(20)}};
+function draw(){x.clearRect(0,0,600,600);regs.forEach(r=>{x.shadowBlur=0;x.fillStyle=r.c||'#2a1f45';x.strokeStyle=r.c?'#fff8':'#6a5290';x.lineWidth=2.5;if(r.c){x.shadowColor=r.c;x.shadowBlur=16}x.fill(r.p);x.stroke(r.p)})}
+function build(n){pat=n||pat;regs=[];P[pat]();draw()}
+const mine=()=>`rgb(${$('red').value},${$('green').value},${$('blue').value})`;
+cv.addEventListener('pointerdown',e=>{const b=cv.getBoundingClientRect(),px=(e.clientX-b.left)*600/b.width,py=(e.clientY-b.top)*600/b.height;for(let i=regs.length-1;i>=0;i--)if(x.isPointInPath(regs[i].p,px,py)){const c=mine();regs[i].c=regs[i].c===c?null:c;draw();return}});
+window.fillRangoli=k=>{regs.forEach(r=>r.c=k=='mine'?mine():`hsl(${(r.a*57.3+360)%360},95%,60%)`);draw()};
+window.clearRangoli=()=>{regs.forEach(r=>r.c=null);draw()};
+const N={lotus:'🪷 Lotus',star:'⭐ Star',diamond:'💎 Diamond',mandala:'🌸 Mandala',sun:'☀️ Sun',flower:'🌼 Flower',weave:'🔷 Weave',spiral:'🌀 Spiral'};
+Object.keys(N).forEach(n=>{const b=document.createElement('button');b.className='alt small';b.textContent=N[n];b.onclick=()=>build(n);$('rpat').appendChild(b)});
+build('lotus')})();
+
+function updateRGB(){let r=+$('red').value,g=+$('green').value,b=+$('blue').value,c=`rgb(${r},${g},${b})`;$('rv').textContent=r;$('gv').textContent=g;$('bv').textContent=b;$('rgbPreview').style.background=c;$('rgbPreview').style.boxShadow=`0 0 25px ${c}`;$('rgbValue').textContent=`Mixed output: RGB(${r}, ${g}, ${b})`}
+['red','green','blue'].forEach(x=>$(x).oninput=updateRGB);updateRGB();
+(function(){const box=$('fbox'),pal={rgb:['#ff3b5c','#3bff7a','#3b8bff','#ffd23f','#c77dff','#ff9f1c'],gold:['#ffd36d','#ffb703','#ff9f1c'],ice:['#7ce8ff','#ff79b8','#ffffff']};
+const M=[['steady','Steady','All LEDs stay ON, like a plain light string.'],['blink','Blink','All LEDs switch ON and OFF together.'],['chase','Chase','Every third LED is ON and the pattern moves along, like a running light.'],['alt','Alternate','Odd and even LEDs take turns.'],['twinkle','Twinkle','Random LEDs light up each step, like stars.'],['wave','Rainbow wave','Each LED mixes red, green and blue differently, so colours roll along the string.'],['fill','Fill up','LEDs switch on one by one until the string is full.'],['bounce','Bounce','One light scans back and forth, like a scanner.']];
+let mode='chase',t=0,n=16,tm=null;
+M.forEach(m=>{const b=document.createElement('button');b.className='alt small';b.textContent=m[1];b.dataset.m=m[0];b.onclick=()=>{mode=m[0];t=0;$('fdesc').textContent=m[2];mark()};$('fmodes').appendChild(b)});
+function mark(){[...$('fmodes').children].forEach(b=>b.style.outline=b.dataset.m==mode?'2px solid #ffd36d':'none')}
+function build(){n=+$('fnum').value;$('fnumV').textContent=n;box.innerHTML='';for(let i=0;i<n;i++){const d=document.createElement('i');d.style.setProperty('--bokeh',pal[$('fpal').value][i%pal[$('fpal').value].length]);box.appendChild(d)}}
+function step(){if(!$('timing').classList.contains('active'))return;t++;const p=pal[$('fpal').value],q=t%(2*n-2),bp=q<n?q:2*n-2-q;
+[...box.children].forEach((b,i)=>{let on=true,c=p[i%p.length];
+if(mode=='blink')on=t%2==0;else if(mode=='chase')on=((i-t)%3+3)%3==0;else if(mode=='alt')on=(i+t)%2==0;else if(mode=='twinkle')on=Math.random()>.55;else if(mode=='fill')on=i<=t%(n+3);else if(mode=='bounce')on=Math.abs(i-bp)<=1;
+if(mode=='wave')c='hsl('+((i*360/n+t*25)%360)+',100%,60%)';
+b.style.setProperty('--bokeh',c);b.classList.toggle('on',on)})}
+function run(){clearInterval(tm);tm=setInterval(step,640-$('fspeed').value*6)}
+window.stopTiming=()=>{clearInterval(tm);tm=null;[...box.children].forEach(b=>b.classList.remove('on'))};
+$('fnum').oninput=build;$('fspeed').oninput=run;$('fpal').onchange=build;build();run();mark();$('fdesc').textContent=M[2][2]})();
+
+// LDR
+function updateLDR(){let l=+$('ambient').value,t=+$('thresholdRange').value,on=l<t;$('lightLevel').textContent=l+'%';$('threshold').textContent=t+'%';$('skyIcon').textContent=l<35?'🌙':l<65?'🌆':'☀️';$('ldrLamp').classList.toggle('on',on);$('ldrState').textContent=on?'Dark detected — automatic diya ON':'Bright day — lamp OFF'}
+$('ambient').oninput=updateLDR;$('thresholdRange').oninput=updateLDR;updateLDR();
+// Smart house
+function runHouse(){
+ let l=+$('houseLight').value,t=+$('houseLimit').value,on=l<t;
+ $('houseLightVal').textContent=l+'%';$('houseLimitVal').textContent=t+'%';
+ $('houseSky').setAttribute('fill',l<30?'#07152f':l<65?'#214c7a':'#79b9ed');
+ $('houseSun').setAttribute('fill',l<30?'#d6e8ff':l<65?'#ffe29a':'#fff2a8');
+ ['w1','w2'].forEach(id=>$(id).setAttribute('fill',on?'#ffd36d':'#263a5c'));
+ $('porchLight').setAttribute('fill',on?'#fff0a8':'#263a5c');
+ document.querySelectorAll('.housebulb').forEach(b=>b.setAttribute('fill',on?'#ffb84d':'#263a5c'));
+ $('houseResult').textContent=on?'🌙 It is getting dark. House lights are ON!':'☀️ It is bright outside. House lights are OFF.';
+ $('houseLesson').textContent=on?'The sensor noticed the darkness. The controller followed your rule and switched on the windows, doorway and Diwali lights.':'The sensor noticed plenty of light. The controller followed your rule and kept the house lights off.';
+}
+$('houseLight').oninput=runHouse;$('houseLimit').oninput=runHouse;runHouse();
+let canvas=$('sky'),ctx=canvas.getContext('2d'),parts=[],rk=[],raf=false,fwFrame=null,autoTimer=null,ambientOsc=null,ambientGain=null,finaleTimers=[],fwN=0,flash=0,ac2=null;
+const stars=Array.from({length:50},()=>[Math.random(),Math.random()*.7,Math.random()*1.5]),FC={mix:['#ff4d6d','#ffd23f','#4cc9f0','#80ed99','#c77dff','#ff9f1c'],gold:['#ffd36d','#ffb703','#fff1b5'],pink:['#ff79b8','#7ce8ff','#ffffff']};
+function resizeCanvas(){let r=canvas.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);canvas.width=r.width*d;canvas.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);if(!raf&&$('fireworks').classList.contains('active')){raf=true;tick()}}
+function startAmbient(){try{if(!ac2||ac2.state==='closed')ac2=new(window.AudioContext||window.webkitAudioContext)();if(ambientOsc)return;ambientOsc=ac2.createOscillator();ambientGain=ac2.createGain();ambientOsc.type='sine';ambientOsc.frequency.value=110;ambientGain.gain.value=.018;ambientOsc.connect(ambientGain).connect(ac2.destination);ambientOsc.start()}catch(e){}}
+function stopAmbient(){try{if(ambientOsc){ambientOsc.stop();ambientOsc.disconnect();ambientGain.disconnect()}}catch(e){}ambientOsc=null;ambientGain=null}
+function stopFireworks(){finaleTimers.forEach(clearTimeout);finaleTimers=[];if(autoTimer){clearInterval(autoTimer);autoTimer=null}$('auto').textContent='Start timed sequence';stopAmbient();rk=[];parts=[];flash=0;raf=false;if(fwFrame)cancelAnimationFrame(fwFrame);fwFrame=null;if(ctx)ctx.clearRect(0,0,canvas.width,canvas.height);try{if(ac2&&ac2.state!=='closed')ac2.close()}catch(e){}ac2=null}
+window.addEventListener('resize',()=>{if($('fireworks').classList.contains('active'))resizeCanvas()});
+function fwSound(){if(!$('fwSnd').checked)return;try{ac2=(!ac2||ac2.state==='closed')?new(window.AudioContext||window.webkitAudioContext)():ac2;const n=ac2.sampleRate*.4,b=ac2.createBuffer(1,n,ac2.sampleRate),a=b.getChannelData(0);for(let i=0;i<n;i++)a[i]=(Math.random()*2-1)*Math.pow(1-i/n,2.5);const s=ac2.createBufferSource(),g=ac2.createGain(),f=ac2.createBiquadFilter();f.frequency.value=800;g.gain.value=.3;s.buffer=b;s.connect(f).connect(g).connect(ac2.destination);s.start()}catch(e){}}
+function FP(x,y,a,v,c,dl,g,k){parts.push({x,y,px:x,py:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,dl,c,g,k})}
+function burst(x,y,type){const pal=FC[$('fwCol').value],c=()=>pal[Math.random()*pal.length|0];fwN++;$('fwCount').textContent=fwN;fwSound();flash=.18;
+type=type&&type!='mix'?type:['peony','ring','willow','crackle','heart','spiral'][Math.random()*6|0];
+if(type=='peony')for(let i=0;i<90;i++)FP(x,y,Math.random()*6.283,1+Math.random()*3.5,c(),.012,.04);
+if(type=='ring'){const c1=c();for(let i=0;i<50;i++)FP(x,y,i*6.283/50,3.2,c1,.014,.03)}
+if(type=='willow')for(let i=0;i<70;i++)FP(x,y,Math.random()*6.283,.8+Math.random()*3,'#ffc850',.006,.07);
+if(type=='crackle')for(let i=0;i<20;i++)FP(x,y,Math.random()*6.283,1.5+Math.random()*2.5,'#ffffff',.01,.04,1);
+if(type=='heart'){const c1=c();for(let i=0;i<60;i++){const t=i*6.283/60;parts.push({x,y,px:x,py:y,vx:16*Math.pow(Math.sin(t),3)*.2,vy:-(13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t))*.2,l:1,dl:.012,c:c1,g:.015})}}
+if(type=='spiral')for(let i=0;i<80;i++)FP(x,y,i*.35,.4+i*.04,c(),.011,.02)}
+function launch(x){const w=canvas.clientWidth,h=canvas.clientHeight;rk.push({x:x||w*(.15+Math.random()*.7),y:h-26,ty:h*(.15+Math.random()*.3),type:$('fwType').value})}
+function tick(){let w=canvas.clientWidth,h=canvas.clientHeight;ctx.fillStyle='rgba(14,9,36,.28)';ctx.fillRect(0,0,w,h);
+stars.forEach(s=>{ctx.fillStyle='rgba(255,255,255,.5)';ctx.fillRect(s[0]*w,s[1]*h,s[2],s[2])});
+ctx.fillStyle='#07041a';ctx.fillRect(0,h-22,w,22);for(let i=0;i<9;i++){const bh=14+((i*37)%20);ctx.fillRect(w*i/9+4,h-22-bh,w/9-8,bh)}
+for(let i=0;i<7;i++){ctx.fillStyle='#ffb347';ctx.beginPath();ctx.ellipse(w*(i+.5)/7,h-11,5+Math.sin(Date.now()/150+i)*.8,3,0,0,6.3);ctx.fill()}
+for(let i=rk.length-1;i>=0;i--){const r=rk[i];r.y-=(r.y-r.ty)*.045+2.2;FP(r.x,r.y,1.57+(Math.random()-.5),.6,'#ffe9b0',.07,.02);if(r.y<=r.ty+3){burst(r.x,r.y,r.type);rk.splice(i,1)}}
+ctx.globalCompositeOperation='lighter';ctx.lineWidth=2;
+for(let i=parts.length-1;i>=0;i--){const p=parts[i];p.px=p.x;p.py=p.y;p.x+=p.vx;p.y+=p.vy;p.vy+=p.g;p.vx*=.986;p.l-=p.dl;
+if(p.k&&p.l<.5){p.k=0;for(let j=0;j<6;j++)FP(p.x,p.y,Math.random()*6.283,1+Math.random()*1.5,'#fff',.05,.04)}
+if(p.l<=0){parts.splice(i,1);continue}ctx.globalAlpha=Math.max(p.l,0);ctx.strokeStyle=p.c;ctx.beginPath();ctx.moveTo(p.px,p.py);ctx.lineTo(p.x,p.y);ctx.stroke()}
+ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
+if(flash>.01){ctx.fillStyle='rgba(255,240,220,'+flash+')';ctx.fillRect(0,0,w,h);flash*=.8}
+if($('fireworks').classList.contains('active'))fwFrame=requestAnimationFrame(tick);else{raf=false;fwFrame=null}}
+canvas.addEventListener('pointerdown',e=>launch(e.clientX-canvas.getBoundingClientRect().left));
+$('launch').onclick=()=>launch();
+$('finale').onclick=()=>{finaleTimers.forEach(clearTimeout);finaleTimers=[];for(let i=0;i<10;i++)finaleTimers.push(setTimeout(()=>launch(),i*220))};
+$('auto').onclick=()=>{if(autoTimer){clearInterval(autoTimer);autoTimer=null;stopAmbient();$('auto').textContent='Start timed sequence'}else{startAmbient();autoTimer=setInterval(()=>launch(),+$('interval').value);$('auto').textContent='Stop sequence'}};
+$('interval').onchange=()=>{if(autoTimer){clearInterval(autoTimer);autoTimer=setInterval(()=>launch(),+$('interval').value)}};
+$('clearSky').onclick=()=>{parts.length=0;rk.length=0;fwN=0;$('fwCount').textContent=0};
+// Sound lab
+let ac3=null;const AC=()=>{ac3=(!ac3||ac3.state==='closed')?new(window.AudioContext||window.webkitAudioContext)():ac3;if(ac3.state=='suspended')ac3.resume();return ac3},vol=()=>$('vol').value/100*.4;
+function note(f,t0,dur,type,g,dec){const a=AC(),o=a.createOscillator(),n=a.createGain(),t=a.currentTime+t0;o.type=type||'sine';o.frequency.value=f;n.gain.setValueAtTime(0,t);n.gain.linearRampToValueAtTime(g*vol(),t+.01);n.gain.exponentialRampToValueAtTime(.0001,t+(dec||dur));o.connect(n).connect(OUT());o.start(t);o.stop(t+(dec||dur)+.05)}
+function noiseHit(t0,dur,fq){const a=AC(),n=a.sampleRate*dur,b=a.createBuffer(1,n,a.sampleRate),d=b.getChannelData(0);for(let i=0;i<n;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/n,2.5);const s=a.createBufferSource(),g=a.createGain(),f=a.createBiquadFilter();f.frequency.value=fq;g.gain.value=vol()*1.6;s.buffer=b;s.connect(f).connect(g).connect(OUT());s.start(a.currentTime+t0)}
+const SM=[['🔔','Temple bell','Several tones ring together (harmonics) and fade slowly. A bell module stores this recipe as numbers.',()=>[1,2.76,5.4,8.9].forEach((m,i)=>note(330*m,0,2.5,'sine',.9/(i+1),2.5))],
+['🚪','Doorbell','Two notes play one after another: ding… dong.',()=>{note(784,0,.7,'sine',1,.7);note(587,.45,1,'sine',1,1)}],
+['🥁','Dhol beat','A low thump slides down in pitch. A controller repeats it in a rhythm.',()=>[0,.3,.45,.9,1.05,1.2].forEach((t,i)=>{const a=AC(),o=a.createOscillator(),g=a.createGain(),tt=a.currentTime+t;o.frequency.setValueAtTime(i%3?210:150,tt);o.frequency.exponentialRampToValueAtTime(50,tt+.14);g.gain.setValueAtTime(vol()*1.8,tt);g.gain.exponentialRampToValueAtTime(.001,tt+.2);o.connect(g).connect(OUT());o.start(tt);o.stop(tt+.22)})],
+['💥','E-cracker bang','Random noise that fades very fast makes a safe digital bang, with no smoke.',()=>{noiseHit(0,.5,900);note(90,0,.3,'sine',1.2,.3)}],
+['🚨','Siren','The frequency sweeps up and down, so the pitch rises and falls.',()=>{const a=AC(),o=a.createOscillator(),g=a.createGain(),t=a.currentTime;o.type='sawtooth';o.frequency.setValueAtTime(400,t);for(let i=0;i<4;i++){o.frequency.linearRampToValueAtTime(900,t+i+.5);o.frequency.linearRampToValueAtTime(400,t+i+1)}g.gain.value=vol()*.5;o.connect(g).connect(OUT());o.start(t);o.stop(t+4)}],
+['📟','Buzzer beeps','A piezo buzzer plays one high tone. Short ON and OFF beeps make an alert.',()=>[0,.25,.5].forEach(t=>note(2000,t,.15,'square',.35,.15))],
+['🎵','Diwali tune','A tune is a list of notes with timings. The controller plays them in order.',()=>[[392,0],[440,.35],[494,.7],[523,1.05],[494,1.5],[440,1.85],[392,2.2],[523,2.8],[587,3.15],[659,3.5]].forEach(n=>note(n[0],n[1],.3,'triangle',.9,.32))]];
+SM.forEach(m=>{const b=document.createElement('button');b.className='alt';b.textContent=m[0]+' '+m[1];b.onclick=()=>{try{m[3]()}catch(e){}$('sdesc').innerHTML='<b>'+m[1]+':</b> '+m[2]};$('smods').appendChild(b)});
+const WD={sine:'Sine: smooth and soft, like a flute.',square:'Square: buzzy and sharp, like a piezo buzzer.',triangle:'Triangle: mellow, between sine and square.',sawtooth:'Sawtooth: bright and rough, like a siren.'};
+$('freq').oninput=()=>$('freqVal').textContent=$('freq').value+' Hz';$('wave').onchange=()=>$('toneNote').textContent=WD[$('wave').value];
+$('tone').onclick=()=>{try{note(+$('freq').value,0,.9,$('wave').value,1,.9)}catch(e){}};
+let outN=null,an=null;function OUT(){if(!outN){const a=AC();an=a.createAnalyser();an.fftSize=512;outN=a.createGain();outN.connect(an);an.connect(a.destination)}return outN}
+const T2=6.2832;
+function hissN(t0,dur,f0,f1,g){const a=AC(),n=a.sampleRate*dur,b=a.createBuffer(1,n,a.sampleRate),d=b.getChannelData(0);for(let i=0;i<n;i++)d[i]=Math.random()*2-1;const s=a.createBufferSource(),gn=a.createGain(),f=a.createBiquadFilter(),t=a.currentTime+t0;f.type='bandpass';f.frequency.setValueAtTime(f0,t);f.frequency.exponentialRampToValueAtTime(f1,t+dur);gn.gain.setValueAtTime(vol()*g,t);gn.gain.linearRampToValueAtTime(0,t+dur);s.buffer=b;s.connect(f).connect(gn).connect(OUT());s.start(t)}
+function sweep(f0,f1,t0,dur,type,g){const a=AC(),o=a.createOscillator(),gn=a.createGain(),t=a.currentTime+t0;o.type=type;o.frequency.setValueAtTime(f0,t);o.frequency.exponentialRampToValueAtTime(f1,t+dur);gn.gain.setValueAtTime(vol()*g,t);gn.gain.linearRampToValueAtTime(0,t+dur);o.connect(gn).connect(OUT());o.start(t);o.stop(t+dur+.05)}
+const CK=[['🎇','Sparkler (phuljhadi)','A steady hiss with many tiny random crackles, like popping sparks.',()=>{hissN(0,2.2,5000,3500,.5);for(let i=0;i<45;i++)noiseHit(Math.random()*2.1,.03,6000)},'spark',2.4],
+['⛲','Anar (fountain)','A rising whoosh as the fountain of sparks shoots up, then fades.',()=>{hissN(0,3,500,3500,1.2);for(let i=0;i<20;i++)noiseHit(.5+Math.random()*2,.03,5000)},'anar',3.2],
+['🌀','Chakri (ground spinner)','A whirring sound that speeds up, then slows. The pitch follows the spin speed.',()=>{sweep(110,520,0,1.4,'sawtooth',.35);sweep(520,120,1.4,1.4,'sawtooth',.35);hissN(0,2.8,3000,2000,.5)},'chakri',3],
+['🚀','Rocket','A rising “suiii” launch whoosh, followed by a burst and crackling sparkles.',()=>{sweep(260,2100,0,1.25,'sawtooth',.22);sweep(420,3000,.08,1.12,'sine',.48);hissN(0,1.25,700,4200,.62);noiseHit(1.3,.8,900);note(70,1.3,.6,'sine',1.4,.6);for(let i=0;i<14;i++)noiseHit(1.6+Math.random()*.9,.05,5000)},'rocket',3],
+['💣','Big bang cracker','One very loud bang: a burst of noise plus a deep thump that fades quickly.',()=>{noiseHit(0,.9,500);note(55,0,.6,'sine',2,.6)},'bomb',1.4],
+['🧨','Garland (laddi)','32 quick pops in a row, one after another, like a long string of small bangs.',()=>{for(let i=0;i<32;i++)noiseHit(i*.09+Math.random()*.025,.12,2800)},'garland',3.6]];
+const cAn=$('cAn'),ca=cAn.getContext('2d');let cur=null,cbuf=null,cFrame=null;
+function showAnim(type,dur){const run=!cur;cur={type,t0:performance.now(),dur,ps:[]};if(run)cLoop()}
+function cLoop(){if(!cur)return;const t=(performance.now()-cur.t0)/1000,k=cur.type,ps=cur.ps,R=Math.random,col=['#ff4d6d','#ffd23f','#4cc9f0','#80ed99','#c77dff','#ff9f1c'];
+const sp=(x,y,a,v,c,l,g)=>ps.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:l||1,c,g:g==null?.05:g});
+ca.save();ca.fillStyle='#0c0820';ca.fillRect(0,0,600,200);
+if(k=='bomb'&&t<.6)ca.translate((R()-.5)*8*(1-t/.6),(R()-.5)*8*(1-t/.6));
+if(k=='spark'&&t<cur.dur-.2){for(let i=0;i<6;i++)sp(300,120,R()*T2,1+R()*3,'#ffd36d',.6);ca.fillStyle='#888';ca.fillRect(298,120,4,70)}
+if(k=='anar'&&t<cur.dur-.3){for(let i=0;i<8;i++)sp(300,170,-1.57+(R()-.5)*.7,3+R()*3,col[R()*6|0],1,.08);ca.fillStyle='#b5501a';ca.fillRect(285,170,30,26)}
+if(k=='chakri'){const an=t*(2+Math.min(t,1.4)*5)*(t<1.4?1:.6);for(let a=0;a<4;a++){const b=an+a*1.57,qx=300+Math.cos(b)*50,qy=95+Math.sin(b)*50;ca.strokeStyle='#aaa';ca.lineWidth=3;ca.beginPath();ca.moveTo(300,95);ca.lineTo(qx,qy);ca.stroke();if(t<cur.dur-.3)sp(qx,qy,b+1.57,2,'#ffd36d',.6,.03)}}
+if(k=='rocket'){if(t<1.3){const ry=190-(t/1.3)*150;ca.fillStyle='#fff';ca.fillRect(298,ry,4,10);sp(300,ry+10,1.57,1,'#ffe9b0',.5,.02)}else if(!cur.f){cur.f=1;for(let i=0;i<110;i++)sp(300,40,R()*T2,1+R()*3.5,col[R()*6|0],1.1,.04)}else if(t>1.6&&t<2.5&&R()<.5)sp(200+R()*200,30+R()*60,R()*T2,.5,'#fff',.5,.03)}
+if(k=='bomb'){ca.fillStyle='rgba(255,255,255,'+Math.max(0,1-t*3)+')';ca.fillRect(0,0,600,200);ca.strokeStyle='rgba(255,180,80,'+Math.max(0,1-t)+')';ca.lineWidth=6;ca.beginPath();ca.arc(300,110,t*280,0,T2);ca.stroke();ca.fillStyle='#ffb347';ca.font='40px sans-serif';ca.fillText('💥',276,125)}
+if(k=='garland'){ca.strokeStyle='#c9a15a';ca.lineWidth=3;ca.beginPath();ca.moveTo(20,100);ca.lineTo(580,100);ca.stroke();for(let i=0;i<32;i++){const x=20+i*(560/31),ti=i*.075;ca.fillStyle=t>ti?'#555':'#d33';ca.fillRect(x-6,102,12,22);if(t>ti&&!cur['p'+i]){cur['p'+i]=1;for(let j=0;j<14;j++)sp(x,105,R()*T2,1+R()*2.5,'#fff3b0',.6,.05)}if(t>ti&&t<ti+.12){ca.fillStyle='rgba(255,240,180,.9)';ca.beginPath();ca.arc(x,105,22,0,T2);ca.fill()}}}
+for(let i=ps.length-1;i>=0;i--){const p=ps[i];p.x+=p.vx;p.y+=p.vy;p.vy+=p.g;p.l-=.02;if(p.l<=0){ps.splice(i,1);continue}ca.globalAlpha=Math.min(p.l,1);ca.fillStyle=p.c;ca.beginPath();ca.arc(p.x,p.y,2.2,0,T2);ca.fill()}
+ca.globalAlpha=1;ca.restore();
+if(an){cbuf=cbuf||new Uint8Array(an.fftSize);an.getByteTimeDomainData(cbuf);ca.strokeStyle='#7ce8ff';ca.lineWidth=1.5;ca.beginPath();for(let i=0;i<cbuf.length;i++){const x=i*600/cbuf.length,y=185-(cbuf[i]-128)/128*22;i?ca.lineTo(x,y):ca.moveTo(x,y)}ca.stroke()}
+if(t>cur.dur+.4){cur=null;ca.fillStyle='#0c0820';ca.fillRect(0,0,600,200);return}cFrame=requestAnimationFrame(cLoop)}
+CK.forEach((m,i)=>{const b=document.createElement('button');b.className='alt';b.innerHTML='<span style="font-size:28px;display:block">'+m[0]+'</span>'+m[1];b.onclick=()=>{try{m[3]();showAnim(m[4],m[5])}catch(e){}$('cdesc').innerHTML='<b>'+m[1]+':</b> '+m[2]};$('ckgrid').appendChild(b)});
+let sq={i:0,s:0,ans:null};
+$('sqAgain').onclick=()=>{if(sq.ans!=null)try{CK[sq.ans][3]()}catch(e){}};
+$('sqPlay').onclick=()=>{if(sq.i>=5)sq={i:0,s:0,ans:null};sq.ans=Math.random()*CK.length|0;try{CK[sq.ans][3]()}catch(e){}
+const o=[sq.ans];while(o.length<3){const r=Math.random()*CK.length|0;if(!o.includes(r))o.push(r)}o.sort(()=>Math.random()-.5);const box=$('sqOpts');box.innerHTML='';$('sqFb').textContent='Which cracker is this?';
+o.forEach(k=>{const b=document.createElement('button');b.className='alt small';b.textContent=CK[k][0]+' '+CK[k][1].split(' (')[0];b.onclick=()=>{if(sq.ans==null)return;const ok=k==sq.ans;if(ok){sq.s++;quizBlast(1)}$('sqFb').textContent=(ok?'Correct! ':'It was the '+CK[sq.ans][1]+'. ')+'Round '+(sq.i+1)+'/5';sq.i++;sq.ans=null;box.innerHTML='';$('sqPlay').textContent=sq.i>=5?'Play again':'▶ Next mystery sound';if(sq.i>=5)$('sqFb').textContent+=' • Final score: '+sq.s+'/5'+(sq.s==5?' 🏆':'')};box.appendChild(b)})};
+
+// Controller patterns
+let seqTimer=null,seqIndex=0;const RC=['#ff4d6d','#ffd23f','#4cc9f0','#80ed99','#c77dff','#ff9f1c'],NB=9,hbs=[...document.querySelectorAll('#sequenceLeds .ropeRow')].map(r=>{for(let i=0;i<NB;i++){const b=document.createElement('i');b.className='hb';b.style.setProperty('--c',RC[i%6]);r.appendChild(b)}return[...r.children]});
+function stopSeq(){clearInterval(seqTimer);seqTimer=null;hbs.flat().forEach(b=>b.classList.remove('on'))}
+function stepSeq(){const m=$('pattern').value,t=seqIndex++;hbs.forEach((row,ri)=>row.forEach((b,i)=>{let on=true;
+if(m=='chase')on=i===t%NB;else if(m=='opposite')on=ri==0?i===t%NB:i===NB-1-t%NB;else if(m=='zig')on=(i+ri)%2===t%2;else if(m=='rows')on=ri===t%2;else if(m=='sparkle')on=Math.random()>.6;else if(m=='fill')on=i<=t%(NB+2);
+b.classList.toggle('on',on)}))}
+$('delay').oninput=()=>$('delayVal').textContent=$('delay').value+' ms';$('stopPattern').onclick=stopSeq;
+$('runPattern').onclick=()=>{stopSeq();seqIndex=0;stepSeq();seqTimer=setInterval(stepSeq,+$('delay').value)};
+$('pattern').onchange=()=>{if(seqTimer)$('runPattern').click()};$('runPattern').click();
+
+function stopAllMedia(){
+ // Stop every repeating visual sequence and sound source when leaving a lab.
+ try{if(typeof window.stopTiming==='function')window.stopTiming()}catch(e){}
+ try{if(typeof stopSeq==='function')stopSeq()}catch(e){}
+ try{if(typeof stopFireworks==='function')stopFireworks()}catch(e){}
+ try{if(typeof cur!=='undefined'){cur=null;if(cFrame)cancelAnimationFrame(cFrame);cFrame=null;ca.clearRect(0,0,cAn.width,cAn.height)}}catch(e){}
+ try{if(typeof qOn!=='undefined'){qOn=false;qr=[];qp=[];qx.clearRect(0,0,qc.width,qc.height)}}catch(e){}
+ try{if(typeof ac3!=='undefined'&&ac3&&ac3.state!=='closed')ac3.close()}catch(e){} ac3=null;outN=null;an=null;
+ try{if(typeof qa!=='undefined'&&qa&&qa.state!=='closed')qa.close()}catch(e){} qa=null;
+}
+
+// Quiz review
+const questions=[['What does a battery give to a circuit?',['Electrical energy and voltage','Colour only','Sound only'],0],['Why does an LED need a safety part called a resistor?',['To limit the current','To make it spin','To make sound'],0],['What does a light sensor do?',['Sensing the light level','Measuring sound','Storing energy'],0],['ON 1 second and OFF 1 second: what is the duty cycle?',['50%','10%','100%'],0],['Which three colours are in an RGB LED?',['Red, green, blue','Red, gold, brown','White, black, grey'],0],['What does a light controller do?',['Reads inputs and controls outputs','Creates sunlight','Replaces all wires'],0],['What can make a motor spin faster?',['More voltage or more PWM “on” time','A longer wire','A bigger sticker'],0],['Why can fast-spinning lights look like a ring?',['Persistence of vision','Gravity','Magic'],0],['What changes how high or low a sound is?',['Its frequency','Its colour','Its wire length'],0],['In the screen fireworks activity, what starts the firework?',['Your tap or button press','The glowing sparks','The sky'],0]];
+const qc=document.createElement('canvas');qc.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:60';document.body.appendChild(qc);
+const qx=qc.getContext('2d');let qp=[],qr=[],qOn=false,qa=null;
+function qsz(){qc.width=innerWidth;qc.height=innerHeight}qsz();addEventListener('resize',qsz);
+function qboom(){try{qa=qa||new(window.AudioContext||window.webkitAudioContext)();const n=qa.sampleRate*.5,b=qa.createBuffer(1,n,qa.sampleRate),d=b.getChannelData(0);for(let i=0;i<n;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/n,2.5);const s=qa.createBufferSource(),g=qa.createGain(),f=qa.createBiquadFilter();f.frequency.value=900;g.gain.value=.3;s.buffer=b;s.connect(f).connect(g).connect(qa.destination);s.start()}catch(e){}}
+function quizBlast(n){for(let i=0;i<(n||1);i++)setTimeout(()=>{qr.push({x:innerWidth*(.15+Math.random()*.7),y:innerHeight,ty:innerHeight*(.12+Math.random()*.3)});if(!qOn){qOn=true;qloop()}},i*260)}
+function qloop(){qx.clearRect(0,0,qc.width,qc.height);
+for(let i=qr.length-1;i>=0;i--){const r=qr[i];r.y-=(r.y-r.ty)*.05+3;qp.push({x:r.x,y:r.y,vx:(Math.random()-.5)*.6,vy:1,l:.6,c:'255,220,150',g:0});qx.fillStyle='#fff';qx.fillRect(r.x-1.5,r.y,3,8);
+if(r.y<=r.ty+4){qboom();const cs=['255,77,109','255,210,63','76,201,240','128,237,153','199,125,255','255,159,28'],c1=cs[Math.random()*6|0],c2=cs[Math.random()*6|0];for(let j=0;j<90;j++){const a=Math.random()*6.283,v=1+Math.random()*4;qp.push({x:r.x,y:r.y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,c:j%2?c1:c2,g:.05})}qr.splice(i,1)}}
+qx.globalCompositeOperation='lighter';
+for(let i=qp.length-1;i>=0;i--){const p=qp[i];p.x+=p.vx;p.y+=p.vy;p.vy+=p.g;p.vx*=.985;p.l-=.016;if(p.l<=0){qp.splice(i,1);continue}qx.fillStyle='rgba('+p.c+','+p.l+')';qx.beginPath();qx.arc(p.x,p.y,2.4,0,6.3);qx.fill()}
+qx.globalCompositeOperation='source-over';
+if(qr.length||qp.length)requestAnimationFrame(qloop);else{qOn=false;qx.clearRect(0,0,qc.width,qc.height)}}
+let qorder=[];function startQuiz(){qorder=questions.map((q,i)=>i).sort(()=>Math.random()-.5);let box=$('quizList');box.innerHTML='';let score=0,answered=0;
+qorder.forEach((n,j)=>{let q=questions[n],d=document.createElement('div');d.className='quiz';d.innerHTML=`<b>${j+1}. ${q[0]}</b><div></div><div class="feedback"></div>`;let opts=d.children[1];
+q[1].map((o,k)=>[o,k===q[2]]).sort(()=>Math.random()-.5).forEach(o=>{let b=document.createElement('button');b.className='alt small';b.textContent=o[0];b.onclick=()=>{if(d.dataset.done)return;d.dataset.done='1';answered++;if(o[1]){score++;d.children[2].textContent='Correct! Rocket launched! 🚀🎆';quizBlast(1)}else d.children[2].textContent='Not quite. Read the lesson again and try the next question.';
+$('quizScore').textContent=`Score so far: ${score} / ${answered}`;if(answered==questions.length){$('quizScore').textContent=`Final score: ${score} / ${questions.length}`+(score==questions.length?' 🏆 Perfect! Grand finale!':'');if(score==questions.length){$('quizScore').textContent+=' Rockets away — grand finale! 🚀🎆';quizBlast(9)}}};opts.appendChild(b)});box.appendChild(d)});
+$('quizScore').textContent='Every correct answer launches a colourful rocket! Answer all 10 questions.'}
+startQuiz();
+// Lab 11: choose a greeting picture, change its quote and add names
+const wishDesigns=[
+ {icon:'🪔',title:'Happy Diwali!',bg:['#3a174f','#a23e61'],quote:['May your home glow with happiness, peace and love. Happy Diwali!','Wishing you bright smiles, warm moments and beautiful memories this Diwali!']},
+ {icon:'🌸',title:'Shubh Deepavali!',bg:['#4b1c68','#bd5b8e'],quote:['May your life bloom with joy, good health and success. Happy Diwali!','May every colour bring a new reason to smile. Have a lovely Diwali!']},
+ {icon:'🏮',title:'Festival of Lights!',bg:['#123b68','#a64c59'],quote:['May the lights of Diwali fill your days with hope and your heart with joy.','Sending love, light and sweet wishes to you and your family!']},
+ {icon:'🏠',title:'A Bright Diwali!',bg:['#172e5d','#8c4775'],quote:['May your home be filled with laughter, togetherness and endless happiness.','Wishing our family a safe, happy and wonderful Diwali together!']}
+];
+let wishDesign=0,wishQuote=0;
+function wishText(){return wishDesigns[wishDesign].quote[wishQuote%wishDesigns[wishDesign].quote.length]}
+function showW(){
+ const d=wishDesigns[wishDesign],to=$('wishTo').value.trim(),from=$('wishFrom').value.trim();
+ $('greeting').style.background=`radial-gradient(circle at 50% 15%,#ffffff25,transparent 38%),linear-gradient(135deg,${d.bg[0]},${d.bg[1]})`;
+ $('greeting').querySelector('.big').textContent=d.icon;
+ $('greeting').querySelector('h2').textContent=d.title;
+ $('wishQuote').textContent=wishText();
+ $('wishToPreview').textContent=to?'To: '+to:'To: My Dear Family';
+ $('wishFromPreview').textContent=from?'With love, '+from:'WITH LOVE';
+ document.querySelectorAll('.wish-choice').forEach((b,i)=>b.classList.toggle('active',i===wishDesign));
+}
+document.querySelectorAll('.wish-choice').forEach(b=>b.onclick=()=>{wishDesign=+b.dataset.wish;wishQuote=0;showW()});
+$('nextWish').onclick=()=>{wishQuote++;showW()};
+$('wishTo').oninput=showW;$('wishFrom').oninput=showW;showW();
+$('shareCard').onclick=async()=>{
+ const d=wishDesigns[wishDesign],to=$('wishTo').value.trim()||'My Dear Family',from=$('wishFrom').value.trim()||'With love';
+ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+ <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${d.bg[0]}"/><stop offset="1" stop-color="${d.bg[1]}"/></linearGradient><radialGradient id="glow"><stop stop-color="#fff2b5" stop-opacity=".8"/><stop offset="1" stop-color="#fff2b5" stop-opacity="0"/></radialGradient></defs>
+ <rect width="1080" height="1350" rx="54" fill="url(#bg)"/><circle cx="540" cy="280" r="300" fill="url(#glow)"/>
+ <text x="540" y="370" font-size="190" text-anchor="middle">${d.icon}</text>
+ <text x="540" y="570" font-family="Arial,sans-serif" font-size="76" font-weight="bold" fill="#fff4ca" text-anchor="middle">${esc(d.title)}</text>
+ <text x="540" y="720" font-family="Arial,sans-serif" font-size="42" fill="#ffffff" text-anchor="middle">${esc(wishText())}</text>
+ <text x="540" y="920" font-family="Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffe4a2" text-anchor="middle">${esc('To: '+to)}</text>
+ <text x="540" y="1040" font-family="Arial,sans-serif" font-size="40" fill="#ffffff" text-anchor="middle">${esc('With love, '+from)}</text>
+ <text x="540" y="1210" font-family="Arial,sans-serif" font-size="30" letter-spacing="7" fill="#ffe4a2" text-anchor="middle">JOLLYEXPLORERS</text></svg>`;
+ try{
+  const blob=new Blob([svg],{type:'image/svg+xml'}),url=URL.createObjectURL(blob),img=new Image();
+  img.onload=()=>{const c=document.createElement('canvas');c.width=1080;c.height=1350;c.getContext('2d').drawImage(img,0,0);URL.revokeObjectURL(url);c.toBlob(async png=>{
+   if(!png){toast('Could not make the greeting picture.');return}
+   const file=new File([png],'My-Diwali-Wish.png',{type:'image/png'});
+   try{
+    if(navigator.canShare&&navigator.canShare({files:[file]}))await navigator.share({files:[file],title:'My Diwali Wish',text:'A Diwali greeting from JollyExplorers'});
+    else{const a=document.createElement('a');a.href=URL.createObjectURL(png);a.download='My-Diwali-Wish.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);toast('Greeting picture saved! Share it with your family.')}
+   }catch(e){if(e.name!=='AbortError')toast('Please try saving the greeting again.')}
+  },'image/png')};
+  img.onerror=()=>{URL.revokeObjectURL(url);toast('Could not make the greeting picture.')};img.src=url;
+ }catch(e){toast('Your greeting is ready. Please try again to save it.')}
+};
+
+(function(){const cv=$('motorCv'),x=cv.getContext('2d'),C=['#ff4d6d','#ffd23f','#4cc9f0','#80ed99','#c77dff','#ff9f1c'],T=6.2832,R=105;let ang=0,dir=1;
+const NOTE={chakri:'The LEDs on the arms blur into a glowing ring when it spins fast.',wheel:'Cabins hang from the rim, so they always stay upright as the wheel turns.',pinwheel:'The blades blur into a colourful disc, just like a real phirki.',aarti:'A turning thali carries lit diyas. Flames always point up.',star:'The star spins around its vertical axis, so it looks wide, then thin, then wide again.'};
+$('mR').onclick=()=>{dir=-dir;$('mR').textContent=dir>0?'↻ Clockwise':'↺ Anti-clockwise'};
+function glow(px,py,r,c,a){const g=x.createRadialGradient(px,py,0,px,py,r);g.addColorStop(0,c);g.addColorStop(1,'rgba(0,0,0,0)');x.globalAlpha=a;x.fillStyle=g;x.beginPath();x.arc(px,py,r,0,T);x.fill();x.globalAlpha=1}
+function draw(){requestAnimationFrame(draw);if(!$('motor').classList.contains('active'))return;
+const V=$('mV').value/10,D=$('mD').value/100,L=+$('mL').value,ty=$('mT').value,rpm=Math.round(45*V*D*(1-.28*L)),mA=Math.round(40+(30+30*L)*V*D/3),w=dir*rpm*T/3600;ang+=w;
+$('mvV').textContent=V.toFixed(1);$('mvD').textContent=Math.round(D*100);
+$('mOut').textContent='Speed: '+rpm+' RPM • Motor current: about '+mA+' mA. '+NOTE[ty];
+const g=x.createLinearGradient(0,0,0,300);g.addColorStop(0,'#100c2c');g.addColorStop(1,'#32184e');x.fillStyle=g;x.fillRect(0,0,600,300);
+const fast=rpm>150,px=300,py=150;
+if(ty!='star'){x.strokeStyle='#777';x.lineWidth=6;x.beginPath();x.moveTo(px,py);x.lineTo(px-55,285);x.moveTo(px,py);x.lineTo(px+55,285);x.stroke()}
+if(ty=='chakri'){if(fast){glow(px,py,R*1.5,'rgba(255,210,120,.6)',.5);x.strokeStyle='rgba(255,230,160,.6)';x.lineWidth=5;x.beginPath();x.arc(px,py,R,0,T);x.stroke()}
+for(let a=0;a<6;a++){const b=a*1.047+ang;x.strokeStyle='#aaa';x.lineWidth=3;x.beginPath();x.moveTo(px,py);x.lineTo(px+Math.cos(b)*R,py+Math.sin(b)*R);x.stroke();
+for(let t=0;t<12;t++){const an=b-dir*t*Math.min(Math.abs(w)*1.4,.28);x.globalAlpha=1-t/12;x.fillStyle=C[a];x.shadowColor=C[a];x.shadowBlur=12;x.beginPath();x.arc(px+Math.cos(an)*R,py+Math.sin(an)*R,9-t*.5,0,T);x.fill()}x.globalAlpha=1;x.shadowBlur=0}}
+if(ty=='wheel'){x.strokeStyle='#999';x.lineWidth=4;x.beginPath();x.arc(px,py,R,0,T);x.stroke();
+for(let a=0;a<24;a++){const b=ang+a*T/24;x.fillStyle=C[a%6];x.shadowColor=C[a%6];x.shadowBlur=8;x.beginPath();x.arc(px+Math.cos(b)*R,py+Math.sin(b)*R,3.5,0,T);x.fill()}x.shadowBlur=0;
+for(let a=0;a<8;a++){const b=ang+a*T/8,qx=px+Math.cos(b)*R,qy=py+Math.sin(b)*R;x.strokeStyle='#999';x.lineWidth=2;x.beginPath();x.moveTo(px,py);x.lineTo(qx,qy);x.stroke();x.fillStyle='#ccc';x.fillRect(qx-1,qy,2,8);x.fillStyle=C[a%6];x.shadowColor=C[a%6];x.shadowBlur=10;x.beginPath();x.roundRect(qx-13,qy+8,26,20,6);x.fill();x.shadowBlur=0}}
+if(ty=='pinwheel'){for(let a=0;a<4;a++){const b=ang+a*T/4;x.fillStyle=C[a];x.globalAlpha=fast?.45:.95;x.beginPath();x.moveTo(px,py);x.lineTo(px+Math.cos(b)*R,py+Math.sin(b)*R);x.quadraticCurveTo(px+Math.cos(b+.9)*R*.95,py+Math.sin(b+.9)*R*.95,px+Math.cos(b+1.57)*R*.3,py+Math.sin(b+1.57)*R*.3);x.closePath();x.fill()}x.globalAlpha=1}
+if(ty=='aarti'){x.fillStyle='#c9a15a';x.beginPath();x.arc(px,py,R,0,T);x.fill();x.strokeStyle='#7d5c2a';x.lineWidth=3;x.beginPath();x.arc(px,py,R*.93,0,T);x.stroke();
+for(let a=0;a<12;a++){const b=ang+a*T/12;x.beginPath();x.moveTo(px+Math.cos(b)*R*.2,py+Math.sin(b)*R*.2);x.lineTo(px+Math.cos(b)*R*.9,py+Math.sin(b)*R*.9);x.stroke()}
+for(let a=0;a<6;a++){const b=ang+a*T/6,qx=px+Math.cos(b)*R*.62,qy=py+Math.sin(b)*R*.62,f=1+.15*Math.sin(Date.now()/90+a);glow(qx,qy-10,28*f,'rgba(255,150,40,1)',.6);x.fillStyle='#b5501a';x.beginPath();x.arc(qx,qy,11,0,Math.PI);x.fill();x.fillStyle='#ffd23f';x.beginPath();x.ellipse(qx,qy-9,4*f,9*f,0,0,T);x.fill()}}
+if(ty=='star'){const sc=Math.abs(Math.cos(ang))*.9+.1;x.strokeStyle='#888';x.lineWidth=2;x.beginPath();x.moveTo(px,0);x.lineTo(px,py-R);x.stroke();glow(px,py,R*1.5,'rgba(255,190,80,1)',.7);x.fillStyle='#ffcc66';x.shadowColor='#ffb03b';x.shadowBlur=20;x.beginPath();for(let i=0;i<16;i++){const t=i*T/16-1.57,r=i%2?R*.42:R;x[i?'lineTo':'moveTo'](px+Math.cos(t)*r*sc,py+Math.sin(t)*r)}x.fill();x.shadowBlur=0}
+x.fillStyle='#ddd';if(ty!='star'){x.beginPath();x.arc(px,py,9,0,T);x.fill()}}
+draw()})();
+(function(){const o=showView;showView=function(id){o(id);const a=document.querySelector('.navbtn.active');if(a)a.scrollIntoView({inline:'center',block:'nearest'})}})();
+</script>
+</body></html>
